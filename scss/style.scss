@@ -1,0 +1,634 @@
+@use "variables" as *;
+
+html {
+  scroll-behavior: smooth;
+  overflow: auto;
+}
+
+body {
+  max-width: 1600px;
+  // background-color: $main-background-color;
+  background-color: $secondary-background-color;
+  margin-inline: auto;
+  min-height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin-inline: 100px;
+  @media (max-width: 768px) {
+    margin-inline: 30px;
+  }
+}
+
+// HERO-SECTION
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  margin-block-start: 40px;
+  @media (max-width: 1200px) {
+    margin-block-start: 0px;
+  }
+  @media (max-width: 768px) {
+    max-width: 768px;
+  }
+  // HEADER
+
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    z-index: 599;
+    max-width: 1600px;
+    @media (max-width: 1200px) {
+      line-height: 60px;
+      padding-inline: 30px;
+    }
+
+    &.open {
+      position: relative;
+      margin-block-start: 50px;
+      flex-direction: column;
+      gap: 50px;
+      z-index: 5000;
+    }
+    .logo {
+      display: flex;
+      flex: 1;
+      align-items: flex-end;
+      @media (max-width: 1200px) {
+        align-items: center;
+      }
+
+      &__title {
+        font-family: map-get($fonts, primary);
+        font-size: 20px;
+        font-weight: 700;
+        color: #ffffff99;
+        opacity: 60;
+      }
+      &__title span {
+        color: white;
+      }
+    }
+
+    // NAV
+    .nav {
+      flex: 1 auto;
+
+      @media (max-width: 992.99px) {
+        display: none;
+      }
+      &__list {
+        display: flex;
+        align-items: center;
+        padding: 11px;
+        gap: 66px;
+      }
+      &__link {
+        font-family: map-get($fonts, primary);
+        font-size: 20px;
+        font-weight: 700;
+        color: #ffffff99;
+        opacity: 60;
+      }
+
+      &.open {
+        display: flex;
+        .nav__list {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+
+  // USER
+  .user__body {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    @media (max-width: 992.99px) {
+      display: none;
+    }
+  }
+  .user img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .ethereum {
+    position: relative;
+    &__header {
+      position: absolute;
+      top: 0;
+      width: 15px;
+      height: 25px;
+      background: linear-gradient(-250deg, #ff56f6, #b936ee, #3bace2, #406aff);
+      clip-path: polygon(50% 0%, 100% 50%, 50% 70%, 0% 50%);
+    }
+    &__footer {
+      margin-top: 2px;
+      width: 15px;
+      height: 25px;
+      background: linear-gradient(50deg, #ff56f6, #b936ee, #3bace2, #406aff);
+      clip-path: polygon(50% 70%, 100% 50%, 50% 100%, 0% 50%);
+    }
+  }
+  // BURGER MENU
+  .burger {
+    display: none;
+    @media (max-width: 992.99px) {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+      row-gap: 5px;
+    }
+    &__line {
+      width: 20px;
+      height: 3px;
+      background-color: white;
+      border-radius: 10px;
+    }
+    &__line--middle {
+      width: 13px;
+    }
+    &.open {
+      @media (max-width: 992.99px) {
+        .burger__line {
+          width: 30px;
+          background-color: #b936ee;
+          box-shadow: 0 0 20px rgba(219, 122, 243, 0.244);
+        }
+      }
+    }
+  }
+
+  // OVERLAY
+  .overlay {
+    overflow: hidden;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    width: 100%;
+    height: 60%;
+
+    &.open {
+      visibility: visible;
+      opacity: 1;
+      background-color: rgb(17, 37, 125);
+      filter: blur(20px);
+    }
+  }
+}
+
+// HERO SECTION
+.hero-column {
+  position: relative;
+  display: flex;
+  gap: 50px;
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  @media (max-width: 768px) {
+  }
+}
+
+.hero-column__discover {
+  @media (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+.hero-column__discover-title {
+  font-family: map-get($fonts, hero-heading);
+  font-size: 65px;
+  font-weight: 600;
+  color: #ffffff;
+  max-width: 850px;
+  line-height: 137%;
+  margin-block-start: 100px;
+  margin-block-end: 20px;
+  @media (max-width: 1200px) {
+    margin-block-start: 45px;
+    margin-block-end: 40px;
+    font-size: 42px;
+    @media (max-width: 768px) {
+    }
+    @media (max-width: 375px) {
+      max-width: 290px;
+      text-align: start;
+    }
+  }
+}
+.hero-column__discover-title span {
+  background: linear-gradient(to right, #ffa6fa, #3c79d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.column-hand__user-name {
+  font-size: 15px;
+}
+.column-hand__title {
+  font-size: 17px;
+}
+
+.hero-column__discover-text {
+  font-family: map-get($fonts, secondary);
+  font-weight: 400;
+  font-size: 25px;
+  color: #ffffff;
+  line-height: 44px;
+  max-width: 650px;
+  opacity: 0.7;
+  margin-block-end: 40px;
+  @media (max-width: 1200px) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+.discover-buttons {
+  display: flex;
+  align-items: center;
+  font-family: map-get($fonts, primary);
+  font-size: 20px;
+  font-weight: 700;
+  margin-block-end: 70px;
+  @media (max-width: 768px) {
+    margin-block-end: 40px;
+  }
+}
+
+.explore-button {
+  display: flex;
+  gap: 10px;
+  padding-block: 20px;
+  padding-inline-start: 65px;
+  clip-path: polygon(20% 0%, 100% 0, 100% 50%, 80% 100%, 0% 100%, 0% 50%);
+  border-radius: 5px;
+  font-size: 20px;
+  color: #ffffff;
+  border: 5px solid transparent;
+  border-image: linear-gradient(45deg, #ffa6fa, #3c79d4) 1;
+  padding: 20px;
+
+  &:hover {
+    background: linear-gradient(280deg, #ff56f6, #b936ee, #3bace2, #406aff) padding-box,
+      linear-gradient(45deg, #ffa6fa, #3c79d4) border-box;
+  }
+  @media (max-width: 768px) {
+    padding-block: 10px;
+    font-size: 12px;
+    padding-block: 10px;
+    padding-inline-start: 25px;
+    border: 2px solid transparent;
+    border-image: linear-gradient(45deg, #ffa6fa, #3c79d4) 1;
+  }
+}
+
+.explore-button__arrow {
+  padding-inline-end: 30px;
+  text-align: center;
+
+  @media (max-width: 1200px) {
+    padding-inline-end: 20px;
+  }
+  @media (max-width: 768px) {
+    padding-inline-end: 10px;
+  }
+}
+
+.explore-button__arrow {
+  width: 70px;
+  @media (max-width: 768px) {
+    width: 40px;
+  }
+}
+
+.discover-buttons__create {
+  background: linear-gradient(to right, #42a6e3, #ff56f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-inline-start: 40px;
+  font-size: 20px;
+  @media (max-width: 768px) {
+    font-size: 12px;
+    margin-inline-start: 20px;
+  }
+}
+.discover-statistic {
+  display: flex;
+  gap: 55px;
+}
+.discover-statistic h3 {
+  color: #ffffff;
+  font-family: map-get($fonts, statistic-hero);
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 400;
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+}
+.discover-statistic p {
+  color: #ffffff;
+  font-family: map-get($fonts, statistic-caption);
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+.hero-column__abstract {
+  margin-block-start: 120px;
+  clip-path: polygon(17% 0, 100% 0%, 100% 20%, 100% 100%, 100% 100%, 0 100%, 0% 80%, 0% 7%);
+  @media (max-width: 768px) {
+    margin-block-start: 00px;
+  }
+}
+.hero-column__abstract-img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 1));
+  @media (max-width: 1200px) {
+    max-width: 325px;
+  }
+}
+.abstract-body {
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+  clip-path: polygon(17% 0, 100% 0%, 100% 20%, 100% 100%, 100% 100%, 0 100%, 0% 80%, 0% 20%);
+  @media (max-width: 1600px) {
+    right: -40px;
+
+    @media (max-width: 1200px) {
+      position: static;
+      width: 325px;
+      max-height: 175px;
+      margin-top: -160px;
+    }
+  }
+}
+.abstract-body__column {
+  gap: 40px;
+}
+
+// CRYPTO-LOGO
+
+.crypto-logo {
+  margin-block-start: 100px;
+  margin-block-end: 215px;
+  @media (max-width: 768px) {
+    margin-block-start: 60px;
+    margin-block-end: 100px;
+  }
+}
+.crypto-logo__body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  place-items: center;
+  @media (max-width: 1250px) {
+    grid-template-columns: repeat((2, 1fr));
+    flex-direction: column-reverse;
+  }
+}
+
+//TOP-NFT
+
+.swiper-wrapper {
+  display: flex;
+  text-align: center;
+  color: white;
+}
+
+.nft-header {
+  display: flex;
+  justify-content: space-between;
+  margin-block-end: 50px;
+
+  h3 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #ffffff;
+    font-family: map-get($fonts, primary);
+  }
+}
+.nft-header__title {
+  display: flex;
+}
+
+.nft-header__title--arrow {
+  display: flex;
+  gap: 15px;
+  img {
+    width: 50px;
+    height: 25px;
+  }
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.nft-body__column {
+  justify-content: space-between;
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+}
+.nft-hand__title {
+  font-size: 22px;
+}
+.nft-hand__user-name {
+  font-size: 20px;
+}
+.nft-auctions__text {
+  font-size: 14px;
+  opacity: 0.7;
+}
+.nft-hand__user-img {
+  width: 35px;
+  height: 35px;
+}
+.nft-hand__text {
+  font-size: 14px;
+}
+.nft-hand__eth-text {
+  font-size: 12px;
+}
+.nft-hand__eth-cost {
+  font-size: 14px;
+}
+
+.nft-auctions__time h3 {
+  font-size: 22px;
+}
+.nft-auctions__time p {
+  font-size: 14px;
+}
+
+@media (max-width: 992.99px) {
+  .nft-auctions__time h3 {
+    font-size: 12px;
+  }
+  .nft-auctions__time p {
+    font-size: 8px;
+  }
+  .nft-hand__eth-cost {
+    font-size: 8px;
+  }
+  .nft-hand__eth-text {
+    font-size: 8px;
+  }
+  .nft-auctions__text {
+    font-size: 8px;
+  }
+  .nft-auctions__button {
+    font-size: 12px;
+  }
+  .nft-hand__user-name {
+    font-size: 12px;
+  }
+  .nft-hand__title {
+    font-size: 13px;
+  }
+  .nft-hand__text {
+    font-size: 8px;
+  }
+}
+.nft-hand__user-verification {
+  margin-inline-start: 10px;
+  width: 15px;
+  height: 15px;
+}
+.nft-hand__user {
+  @media (max-width: 1440px) {
+  }
+}
+.nft-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.nft-body__buttons {
+  margin-block-start: 40px;
+  display: flex;
+  justify-content: center;
+  margin-block-end: 100px;
+}
+
+.nft-body__buttons-explore {
+  display: none;
+  @media (max-width: 768px) {
+    display: flex;
+  }
+}
+
+// COLLECTION
+.collections {
+}
+.collections-body {
+}
+.collections-body__column {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 130px;
+  @media (max-width: 1240px) {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+.explore-collections {
+  color: white;
+  width: 60%;
+  @media (max-width: 768px) {
+    width: 100%;
+  
+  }
+}
+.explore-collections__title-header {
+}
+.explore-collections__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: start;
+  gap: 40px;
+  padding: 0;
+  margin-block: 45px;
+  @media (max-width: 768px) {
+    gap: 15px;
+     margin-block: 25px;
+
+  }
+}
+
+.explore-collections__cards-items {
+  text-align: center;
+  width: 100%;
+  min-width: 145px;
+  padding: 20px;
+  opacity: 0.7;
+  border: 2px solid transparent;
+  border-image: linear-gradient(280deg, #ffa6fa, #3c79d4) 1;
+  &:hover {
+    opacity: 1;
+    background: linear-gradient(45deg, #ff56f6, #b936ee, #3bace2, #406aff) padding-box,
+      linear-gradient(45deg, #ffa6fa, #3c79d4) border-box;
+  }
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
+}
+.explore-collections__cards-link,
+.explore-collections__title-header {
+  font-size: 25px;
+  font-weight: 700;
+  font-family: map-get($fonts, primary);
+}
+
+.explore-collections__cards-link {
+  @media (max-width: 768px) {
+    font-size: 11px;
+  }
+}
+.explore-collections__title-header {
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.explore-collections__title-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  font-family: map-get($fonts, primary);
+  font-size: 20px;
+  @media (max-width: 768px) {
+    font-size: 8px;
+  }
+}
+.explore-img img {
+ max-width: 435px;
+ max-height: 850px;
+  @media (max-width: 768px) {
+    max-width: 185px;
+  
+  }
+}

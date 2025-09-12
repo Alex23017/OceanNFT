@@ -1,16 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
 
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-<body>
-    
-    <script defer src="script.js"></script>
-</body>
+    <link rel="stylesheet" href="./scss/reset.css" />
+    <link rel="stylesheet" href="./scss/cards.css" />
+    <link rel="stylesheet" href="./scss/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Orbitron:regular,700,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rajdhani:300,regular,500,600,700"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,500" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:regular,500,600,800"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://fonts.googleapis.com/css?family=Aldrich:regular" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <section class="hero-section">
+        <div class="overlay"></div>
+        <header class="header">
+          <div class="logo">
+            <div class="ethereum">
+              <div class="ethereum__header"></div>
+              <div class="ethereum__footer"></div>
+            </div>
+            <p class="logo__title">Ocean<span>NFT</span></p>
+          </div>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="">Market</a>
+              </li>
+              <li class="nav__item"><a class="nav__link" href="">Features</a></li>
+              <li class="nav__item"><a class="nav__link" href="">Community</a></li>
+            </ul>
+          </nav>
+          <div class="user">
+            <div class="user__body">
+              <a href="">
+                <img class="basket" src="./img/hero-section/header/basket.svg" alt="basket" />
+              </a>
+              <a href="">
+                <img class="profile" src="./img/hero-section/header/profile.svg" alt="profile" />
+              </a>
+            </div>
+            <div id="burger" class="burger">
+              <span class="burger__line"></span>
+              <span class="burger__line burger__line--middle"></span>
+              <span class="burger__line"></span>
+            </div>
+          </div>
+        </header>
+        <div class="hero-column">
+          <div class="hero-column__discover">
+            <h1 class="hero-column__discover-title">
+              Discover, collect, and sell <span>Timeless</span> NFTs
+            </h1>
+
+            <p class="hero-column__discover-text">
+              The world’s first and largest digital marketplace for crypto collectibles and non-
+              fungible tokens (NFTs).
+            </p>
+
+            <div class="discover-buttons">
+              <a href="" class="discover-buttons__explore explore-button"
+                >Explore
+                <img
+                  class="discover-buttons__arrow explore-button__arrow"
+                  src="./img/hero-section/arrow-right.svg"
+                  alt="arrow-right"
+                />
+              </a>
+
+              <a href="" class="discover-buttons__create">Create NFT's</a>
+            </div>
+            <div class="discover-statistic">
+              <div class="discover-statistic__artwork">
+                <h3 class="discover-statistic__artwork-title">35m+</h3>
+                <p class="discover-statistic__artwork-text">Artwork</p>
+              </div>
+              <div class="discover-statistic__auctions">
+                <h3 class="discover-statistic__auctions-title">18m+</h3>
+                <p class="discover-statistic__auctions-text">Auctions</p>
+              </div>
+              <div class="discover-statistic__artists">
+                <h3 class="discover-statistic__artists-title">500k+</h3>
+                <p class="discover-statistic__artists-text">Artists</p>
+              </div>
+            </div>
+          </div>
+          <div class="hero-column__abstract">
+            <div class="hero-column__abstract-shadow">
+              <img
+                class="hero-column__abstract-img"
+                src="./img/hero-section/hero_img.svg"
+                alt="img"
+              />
+            </div>
+          </div>
+          <div class="abstract-body cards-body">
+            <div class="abstract-body__column cards-body__column">
+              <div class="column-hand cards-hand">
+                <p class="column-hand__title card-hand__title">3D Abstract Hand</p>
+                <div class="column-hand__user card-hand__user">
+                  <img
+                    class="column-hand__user-img card-hand__user-img"
+                    src="./img/hero-section/avatar.svg"
+                    alt="avatar"
+                  />
+                  <p class="column-hand__user-name card-hand__user-name">@jhonartist</p>
+                  <img
+                    class="column-hand__user-verification card-hand__user-verification"
+                    src="./img/hero-section/header/verification.svg"
+                    alt="verivication"
+                  />
+                </div>
+                <p class="column-hand__text card-hand__text">Reserve price</p>
+                <div class="column-hand__eth card-hand__eth">
+                  <img
+                    class="column-hand__eth-img card-hand__eth-img"
+                    src="./img/hero-section/Ethereum_white.svg"
+                    alt="eth"
+                  />
+                  <p class="column-hand__eth-text card-hand__eth-text">ETH 9.31</p>
+                  <p class="column-hand__eth-cost card-hand__eth-cost">($29,8846)</p>
+                </div>
+              </div>
+              <div class="column-auctions card-auctions">
+                <p class="column-auctions__text card-auctions__text">Auction Ends in</p>
+                <div class="column-auctions__time card-auctions__time">
+                  <div class="column-auctions__hours card-auctions__hours">
+                    <h3 class="column-auctions__hours-number card-auctions__hours-number">18</h3>
+                    <p class="column-auctions__hours-label card-auctions__hours-label">Hours</p>
+                  </div>
+                  <div class="column-auctions__mins card-auctions__mins">
+                    <h3 class="column-auctions__mins-number card-auctions__mins-number">25</h3>
+                    <p class="column-auctions__mins-label card-auctions__mins-label">Mins</p>
+                  </div>
+                  <div class="column-auctions__secs card-auctions__secs">
+                    <h3 class="column-auctions__secs-number card-auctions__secs-number">44</h3>
+                    <p class="column-auctions__secs-label card-auctions__secs-label">Secs</p>
+                  </div>
+                </div>
+                <a class="column-auctions__button card-auctions__button" href="">
+                  Place Bid <img src="./img/hero-section/arrow-right.svg" alt="arrow-right"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="crypto-logo">
+        <div class="crypto-logo__body">
+          <img src="./img/crypto-logo/Binance_logo.svg" alt="binance" />
+          <img src="./img/crypto-logo/Ethereum_logo.svg" alt="eth" />
+          <img src="./img/crypto-logo/Blockchain_logo.svg" alt="block" />
+          <img src="./img/crypto-logo/BitMex_logo.svg" alt="bit" />
+        </div>
+      </section>
+      <section class="top-nft">
+        <div class="top-nft__body">
+          <div class="nft-header">
+            <h3 class="nft-header__title">Top NFT’s now</h3>
+            <h3 class="nft-header__title nft-header__title--arrow">
+              View all
+              <img src="/img/hero-section/arrow-right.svg" alt="arrow-right" />
+            </h3>
+          </div>
+
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper"></div>
+          </div>
+          <div class="nft-body__buttons">
+            <a href="" class="nft-body__buttons-explore explore-button"
+              >Explore
+              <img
+                class="nft-body__buttons-arrow explore-button__arrow"
+                src="./img/hero-section/arrow-right.svg"
+                alt="arrow-right"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="collections">
+        <div class="collections-body">
+          <div class="collections-body__column">
+            <div class="explore-collections">
+              <h3 class="explore-collections__title-header">Explore Collections</h3>
+                <ul class="explore-collections__cards">
+                  <li class="explore-collections__cards-items">
+                    <a class="explore-collections__cards-link" href="">Photography</a>
+                  </li>
+                  <li class="explore-collections__cards-items">
+                    <a class="explore-collections__cards-link" href="">Sports</a>
+                  </li>
+                  <li class="explore-collections__cards-items">
+                    <a class="explore-collections__cards-link" href="">Brands</a>
+                  </li>
+                  <li class="explore-collections__cards-items">
+                    <a class="explore-collections__cards-link" href="">Collectibles</a>
+                  </li>
+                  <li class="explore-collections__cards-items">
+                    <a class="explore-collections__cards-link" href="">Art</a>
+                  </li>
+                  <li class="explore-collections__cards-items">
+                    <a class="explore-collections__cards-link" href="">Utility</a>
+                  </li>
+                  <li class="explore-collections__cards-items">
+                    <a class="explore-collections__cards-link" href="">Brands</a>
+                  </li>
+                  <li class="explore-collections__cards-items">
+                    <a class="explore-collections__cards-link" href="">Collectibles</a>
+                  </li>
+                </ul>
+            
+              <h3 class="explore-collections__title-footer">
+                View all
+                <img class="nft-body__buttons-arrow explore-button__arrow" src="/img/hero-section/arrow-right.svg" alt="arrow-right" />
+              </h3>
+            </div>
+            <div class="explore-img">
+              <img src="/img/collection-section/girl.png" alt="girl" />
+            </div>
+       
+        </div>
+      </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/burger.js"></script>
+    <script type="module" src="./js/main.js"></script>
+    <script src="./js/cards.js"></script>
+  </body>
 </html>

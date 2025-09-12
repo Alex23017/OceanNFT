@@ -1,0 +1,44 @@
+//BACKGROUND-COLOR
+
+$main-background-color: #01204c;
+$secondary-background-color: #20083b;
+
+// FONTS
+
+$fonts: (
+  primary: (
+    "Orbitron",
+    sans-serif,
+  ),
+  secondary: (
+    "Rajdhani",
+    sans-serif,
+  ),
+  hero-heading: (
+    "League Spartan",
+    sans-serif,
+  ),
+  statistic-card: (
+    "Roboto",
+    sans-serif,
+  ),
+  footer: (
+    "Inter",
+    sans-serif,
+  ),
+  statistic-hero: (
+    "Aldrich",
+    sans-serif,
+  ),
+  statistic-caption: (
+    "AlethiaNext",
+    sans-serif,
+  ),
+);
+
+@font-face {
+  font-family: "AlethiaNext";
+  src: url("./fonts/AlethiaNext-Light.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
