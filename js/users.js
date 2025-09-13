@@ -62,11 +62,11 @@ document.addEventListener("DOMContentLoaded", () => {
           `
     <div class="card-container__user swiper-slide">
       <img class="user-avatar" src=${user.avatar} alt="avatar">
-              <img class="user__background" src="/img/users-section/background-card.svg" alt="background" />
+              <img class="user__background" src="img/users-section/background-card.svg" alt="background" />
               <h3 class="user__name">${user.name}</h3>
               <p class="user__email">
                 @jhonartist
-                <img src="/img/hero-section/header/verification.svg" alt="verification" />
+                <img src="img/hero-section/header/verification.svg" alt="verification" />
               </p>
               <div class="user-info">
                 <div class="user-info__followers">

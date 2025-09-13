@@ -1,19 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
   const userCards = [
-    { name: "Eleanor Pena", imgUser: "/img/sellers-section/avatar-1.svg", count: 74875 },
-    { name: "Eleanor Pena", imgUser: "/img/sellers-section/avatar-1.svg", count: 74875 },
-    { name: "Eleanor Pena", imgUser: "/img/sellers-section/avatar-1.svg", count: 74875 },
-    { name: "Eleanor Pena", imgUser: "/img/sellers-section/avatar-1.svg", count: 74875 },
-    { name: "Eleanor Pena", imgUser: "/img/sellers-section/avatar-1.svg", count: 74875 },
-    { name: "Eleanor Pena", imgUser: "/img/sellers-section/avatar-1.svg", count: 74875 },
-    { name: "Eleanor Pena", imgUser: "/img/sellers-section/avatar-1.svg", count: 74875 },
-    { name: "Eleanor Pena", imgUser: "/img/sellers-section/avatar-1.svg", count: 74875 },
-    { name: "Eleanor Pena", imgUser: "/img/sellers-section/avatar-1.svg", count: 74875 },
-    { name: "Eleanor Pena", imgUser: "/img/sellers-section/avatar-1.svg", count: 74875 },
-    { name: "Eleanor Pena", imgUser: "/img/sellers-section/avatar-1.svg", count: 74875 },
-    { name: "Eleanor Pena", imgUser: "/img/sellers-section/avatar-1.svg", count: 74875 },
-    { name: "Eleanor Pena", imgUser: "/img/sellers-section/avatar-1.svg", count: 74875 },
-    { name: "Eleanor Pena", imgUser: "/img/sellers-section/avatar-1.svg", count: 74875 },
+    { name: "Eleanor Pena", imgUser: "img/sellers-section/avatar-1.svg", count: 74875 },
+    { name: "Eleanor Pena", imgUser: "img/sellers-section/avatar-1.svg", count: 74875 },
+    { name: "Eleanor Pena", imgUser: "img/sellers-section/avatar-1.svg", count: 74875 },
+    { name: "Eleanor Pena", imgUser: "img/sellers-section/avatar-1.svg", count: 74875 },
+    { name: "Eleanor Pena", imgUser: "img/sellers-section/avatar-1.svg", count: 74875 },
+    { name: "Eleanor Pena", imgUser: "img/sellers-section/avatar-1.svg", count: 74875 },
+    { name: "Eleanor Pena", imgUser: "img/sellers-section/avatar-1.svg", count: 74875 },
+    { name: "Eleanor Pena", imgUser: "img/sellers-section/avatar-1.svg", count: 74875 },
+    { name: "Eleanor Pena", imgUser: "img/sellers-section/avatar-1.svg", count: 74875 },
+    { name: "Eleanor Pena", imgUser: "img/sellers-section/avatar-1.svg", count: 74875 },
+    { name: "Eleanor Pena", imgUser: "img/sellers-section/avatar-1.svg", count: 74875 },
+    { name: "Eleanor Pena", imgUser: "img/sellers-section/avatar-1.svg", count: 74875 },
+    { name: "Eleanor Pena", imgUser: "img/sellers-section/avatar-1.svg", count: 74875 },
+    { name: "Eleanor Pena", imgUser: "img/sellers-section/avatar-1.svg", count: 74875 },
   ];
 
   const openTop = document.querySelector(".sellers__title");
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="sellers-card__user">
           <h3 class="sellers-card__user-name">${user.name}</h3>
           <div class="sellers-card__user-info">
-            <img src="/img/sellers-section/ETH.svg" alt="ETH" class="sellers-card__user-eth" />
+            <img src="img/sellers-section/ETH.svg" alt="ETH" class="sellers-card__user-eth" />
             <p class="sellers-card__user-count">${user.count}</p>
           </div>
         </div>
