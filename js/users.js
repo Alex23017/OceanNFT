@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       name: "Jhones Nickeh",
       email: "@jhonartist",
-      avatar: "/img/users-section/avatar-man.svg",
+      avatar: "img/users-section/avatar-man.svg",
       followers: 125,
       following: 256,
       artworks: 129,
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       name: "Jhones Nickeh",
       email: "@jhonartist",
-      avatar: "/img/users-section/avatar-man.svg",
+      avatar: "img/users-section/avatar-man.svg",
       followers: 125,
       following: 256,
       artworks: 129,
