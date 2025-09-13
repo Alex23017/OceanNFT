@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   // МАСИВ КАРТОЧЕК
+
   const products = [
     {
       title: "Apollo Eth #1289 NFT",
@@ -32,11 +33,15 @@ document.addEventListener("DOMContentLoaded", () => {
       userName: "@jhonartist(6)",
     },
   ];
+  const openTop = document.querySelector(".sellers__title");
+  openTop.addEventListener("click", () => {
+    openTop.classList.toggle("active");
+  });
 
-  const swiperWrapper = document.querySelector(".mySwiper .swiper-wrapper");
+  const mySwiperNFT = document.querySelector(".mySwiperNFT .swiper-wrapper");
 
-  if (swiperWrapper) {
-    swiperWrapper.innerHTML = products
+  if (mySwiperNFT) {
+    mySwiperNFT.innerHTML = products
       .map(
         (product) => `
         <div class="swiper-slide">
@@ -79,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <p class="card-auctions__secs-label">Secs</p>
                   </div>
                 </div>
-                <a class="card-auctions__button nft-auctions__button" href="">
+                <a class="place__button--large decoration--buttons" href="">
                   Place Bid <img src="./img/hero-section/arrow-right.svg" alt="arrow-right"/></a>
               </div>
             </div>
@@ -90,10 +95,15 @@ document.addEventListener("DOMContentLoaded", () => {
       `,
       )
       .join("");
+    const prevent = document.querySelectorAll(".decoration--buttons");
+    prevent.forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+      });
+    });
 
-    
     // СВАЙПЕР
-    const swiper = new Swiper(".mySwiper", {
+    const swiper = new Swiper(".mySwiperNFT", {
       slidesPerView: 3,
       spaceBetween: 30,
       loop: true,
