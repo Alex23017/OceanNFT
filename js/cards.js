@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const products = [
     {
       title: "Apollo Eth #1289 NFT",
-      imageCard: "./img/nft-section/Appollo.svg",
+      imageCard: "img/nft-section/Appollo.svg",
       userName: "@jhonartist(1)",
     },
     {
