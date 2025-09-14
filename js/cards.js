@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
         (product) => `
         <div class="swiper-slide">
           <div class="card-body nft-body"> 
-            <img src="${product.imageCard}" alt="product" style="width: 100%;" />
+            <img src="${product.imageCard}" alt="product" loading="lazy" style="width: 100%;" />
             
            <div class="cards-body ">
             <div class="cards-body__column nft-body__column">
