@@ -79,7 +79,7 @@ body {
   margin-top: 2px;
   width: 15px;
   height: 25px;
-  background: linear-gradient(50deg, #ff56f6, #b936ee, #3bace2, #406aff);
+  background: linear-gradient(-250deg, #ff56f6, #b936ee, #3bace2, #406aff);
   clip-path: polygon(50% 70%, 100% 50%, 50% 100%, 0% 50%);
 }
 
@@ -387,40 +387,6 @@ body {
   .discover-buttons {
     -webkit-margin-after: 40px;
             margin-block-end: 40px;
-  }
-}
-
-.explore-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 10px;
-  padding-block: 20px;
-  -webkit-padding-start: 65px;
-          padding-inline-start: 65px;
-  clip-path: polygon(20% 0%, 100% 0, 100% 50%, 80% 100%, 0% 100%, 0% 50%);
-  border-radius: 5px;
-  font-size: 20px;
-  color: #ffffff;
-  font-family: "Orbitron", sans-serif;
-  border: 5px solid transparent;
-  -o-border-image: linear-gradient(45deg, #ffa6fa, #3c79d4) 1;
-     border-image: linear-gradient(45deg, #ffa6fa, #3c79d4) 1;
-  padding: 20px;
-}
-.explore-button:hover {
-  background: linear-gradient(280deg, #ff56f6, #b936ee, #3bace2, #406aff) padding-box, linear-gradient(45deg, #ffa6fa, #3c79d4) border-box;
-}
-@media (max-width: 768px) {
-  .explore-button {
-    padding-block: 10px;
-    font-size: 12px;
-    padding-block: 10px;
-    -webkit-padding-start: 25px;
-            padding-inline-start: 25px;
-    border: 2px solid transparent;
-    -o-border-image: linear-gradient(45deg, #ffa6fa, #3c79d4) 1;
-       border-image: linear-gradient(45deg, #ffa6fa, #3c79d4) 1;
   }
 }
 

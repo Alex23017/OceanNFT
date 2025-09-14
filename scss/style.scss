@@ -61,14 +61,14 @@ body {
     top: 0;
     width: 15px;
     height: 25px;
-    background: linear-gradient(-250deg, #ff56f6, #b936ee, #3bace2, #406aff);
+    background: $background-nft;
     clip-path: polygon(50% 0%, 100% 50%, 50% 70%, 0% 50%);
   }
   &__footer {
     margin-top: 2px;
     width: 15px;
     height: 25px;
-    background: linear-gradient(50deg, #ff56f6, #b936ee, #3bace2, #406aff);
+    background: $background-nft;
     clip-path: polygon(50% 70%, 100% 50%, 50% 100%, 0% 50%);
   }
 }
@@ -239,7 +239,7 @@ body {
   }
 }
 .hero-column__discover-title {
-  font-family: map-get($fonts, hero-heading);
+  font-family: $hero-heading;
   font-size: 65px;
   font-weight: 600;
   color: #ffffff;
@@ -260,14 +260,14 @@ body {
   }
 }
 .discover-statistic__artwork-title {
-  filter: drop-shadow(2px 2px 30px #ffa6fa);
+  filter: $background-drop-title;
 }
 
 .hero-column__discover-title span {
   background: linear-gradient(to right, #ffa6fa, #3c79d4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(2px 2px 30px #ffa6fa);
+  filter: $background-drop-title;
 }
 
 .column-hand__user-name {
@@ -278,7 +278,7 @@ body {
 }
 
 .hero-column__discover-text {
-  font-family: map-get($fonts, secondary);
+  font-family: $secondary;
   font-weight: 400;
   font-size: 25px;
   color: #ffffff;
@@ -294,7 +294,7 @@ body {
 .discover-buttons {
   display: flex;
   align-items: center;
-  font-family: map-get($fonts, primary);
+  font-family: $primary;
   font-size: 20px;
   font-weight: 700;
   margin-block-end: 70px;
@@ -303,33 +303,32 @@ body {
   }
 }
 
-.explore-button {
-  display: flex;
-  gap: 10px;
-  padding-block: 20px;
-  padding-inline-start: 65px;
-  clip-path: polygon(20% 0%, 100% 0, 100% 50%, 80% 100%, 0% 100%, 0% 50%);
-  border-radius: 5px;
-  font-size: 20px;
-  color: #ffffff;
-  font-family: map-get($fonts, primary);
-  border: 5px solid transparent;
-  border-image: linear-gradient(45deg, #ffa6fa, #3c79d4) 1;
-  padding: 20px;
+// .explore-button {
+//   display: flex;
+//   gap: 10px;
+//   padding-block: 20px;
+//   padding-inline-start: 65px;
+//   clip-path: polygon(20% 0%, 100% 0, 100% 50%, 80% 100%, 0% 100%, 0% 50%);
+//   border-radius: 5px;
+//   font-size: 20px;
+//   color: #ffffff;
+//   font-family: map-get($fonts, primary);
+//   border: 5px solid transparent;
+//   border-image: linear-gradient(45deg, #ffa6fa, #3c79d4) 1;
+//   padding: 20px;
 
-  &:hover {
-    background: linear-gradient(280deg, #ff56f6, #b936ee, #3bace2, #406aff) padding-box,
-      linear-gradient(45deg, #ffa6fa, #3c79d4) border-box;
-  }
-  @media (max-width: 768px) {
-    padding-block: 10px;
-    font-size: 12px;
-    padding-block: 10px;
-    padding-inline-start: 25px;
-    border: 2px solid transparent;
-    border-image: linear-gradient(45deg, #ffa6fa, #3c79d4) 1;
-  }
-}
+//   &:hover {
+  
+//   }
+//   @media (max-width: 768px) {
+//     padding-block: 10px;
+//     font-size: 12px;
+//     padding-block: 10px;
+//     padding-inline-start: 25px;
+//     border: 2px solid transparent;
+//     border-image: linear-gradient(45deg, #ffa6fa, #3c79d4) 1;
+//   }
+// }
 
 .explore-button__arrow {
   padding-inline-end: 30px;

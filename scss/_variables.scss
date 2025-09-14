@@ -2,6 +2,8 @@
 
 $main-background-color: #01204c;
 $secondary-background-color: #20083b;
+$background-nft: linear-gradient(-250deg, #ff56f6, #b936ee, #3bace2, #406aff);
+$background-drop-title: drop-shadow(2px 2px 30px #ffa6fa);
 
 // FONTS
 
@@ -46,3 +48,7 @@ $fonts: (
   font-weight: 400;
   font-style: normal;
 }
+
+$primary: map-get($fonts, primary);
+$secondary: map-get($fonts, secondary);
+$hero-heading: map-get($fonts, hero-heading);
