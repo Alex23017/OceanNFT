@@ -39,10 +39,10 @@
   font-size: 22px;
   font-weight: 700;
   line-height: 35px;
+  white-space: nowrap;
 }
 @media (max-width: 1200px) {
   .card-hand__title {
-    text-wrap: balance;
     font-size: 12px;
   }
 }
