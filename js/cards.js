@@ -4,32 +4,32 @@ document.addEventListener("DOMContentLoaded", () => {
   const products = [
     {
       title: "Apollo Eth #1289 NFT",
-      imageCard: "img/nft-section/Appollo.svg",
+      imageCard: "img/nft-section/Appollo.jpg",
       userName: "@jhonartist(1)",
     },
     {
       title: "Sassy Bull #1169 Art",
-      imageCard: "./img/nft-section/Sassy.svg",
+      imageCard: "img/nft-section/Sassy.jpg",
       userName: "@jhonartist(2)",
     },
     {
       title: "Satisfying #4289 Art",
-      imageCard: "./img/nft-section/Satisfying.svg",
+      imageCard: "./img/nft-section/Satisfying.jpg",
       userName: "@jhonartist(3)",
     },
     {
       title: "Apollo Eth#1289 NFT",
-      imageCard: "./img/nft-section/Appollo.svg",
+      imageCard: "./img/nft-section/Appollo.jpg",
       userName: "@jhonartist(4)",
     },
     {
       title: "Sassy Bull #1169 Art",
-      imageCard: "./img/nft-section/Sassy.svg",
+      imageCard: "./img/nft-section/Sassy.jpg",
       userName: "@jhonartist(5)",
     },
     {
       title: "Satisfying Art #4289 Art",
-      imageCard: "./img/nft-section/Satisfying.svg",
+      imageCard: "./img/nft-section/Satisfying.jpg",
       userName: "@jhonartist(6)",
     },
   ];
