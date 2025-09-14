@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swiper с раскрывающимся списком</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .swiper {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .swiper-slide {
+      background: #f2f2f2;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      position: relative;
+    }
+
+    .toggle-btn {
+      margin-top: 10px;
+      padding: 8px 15px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+    }
+
+
+  </style>
+</head>
+<body>
+
+<h2>Swiper с раскрывающимися списками</h2>
+
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      Слайд 1
+      <button class="toggle-btn">Показать список</button>
+      <ul class="hidden-list">
+        <li>Элемент A</li>
+        <li>Элемент B</li>
+        <li>Элемент C</li>
+      </ul>
+    </div>
+    <div class="swiper-slide">
+      Слайд 2
+      <button class="toggle-btn">Показать список</button>
+      <ul class="hidden-list">
+        <li>Элемент D</li>
+        <li>Элемент E</li>
+      </ul>
+    </div>
+    <div class="swiper-slide">
+      Слайд 3
+      <button class="toggle-btn">Показать список</button>
+      <ul class="hidden-list">
+        <li>Элемент F</li>
+        <li>Элемент G</li>
+        <li>Элемент H</li>
+        <li>Элемент I</li>
+      </ul>
+    </div>
+  </div>
+  
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper(".mySwiperFooter", {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+  document.querySelectorAll(".toggle-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const list = btn.nextElementSibling;
+      list.classList.toggle("active");
+    });
+  });
+</script>
+
+</body>
+</html>
