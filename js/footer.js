@@ -14,7 +14,12 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     },
   });
-
+  const shadowFooter = document.querySelectorAll(".footer__title--decoration, .footer__title--line")
+  shadowFooter.forEach(btn => {
+    btn.addEventListener("click", () => {
+      btn.classList.toggle("active")
+    })
+  })
 
   document.querySelectorAll(".toggle-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
