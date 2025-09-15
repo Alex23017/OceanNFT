@@ -1974,6 +1974,10 @@ button::before {
   font-family: "MuseoModerno", sans-serif;
 }
 
+.footer-wrapper .swiper-slide {
+  width: 100% !important;
+}
+
 .footer__policy {
   display: -webkit-box;
   display: -ms-flexbox;
