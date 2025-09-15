@@ -4,6 +4,38 @@
   font-weight: 400;
   font-style: normal;
 }
+@-webkit-keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+[class*="--blink"] {
+  -webkit-animation: blink 5s infinite;
+          animation: blink 5s infinite;
+}
+
+[class*="--blink"].active {
+  -webkit-animation: none;
+          animation: none;
+}
+
 .cards-body {
   font-family: "Rajdhani", sans-serif;
   border: 2px solid transparent;

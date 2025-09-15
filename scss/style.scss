@@ -7,7 +7,6 @@ html {
 
 body {
   max-width: 1600px;
-  // background-color: $main-background-color;
   background-color: $secondary-background-color;
   margin-inline: auto;
   min-height: 100vh;
@@ -73,7 +72,7 @@ body {
   }
 }
 .logo__title {
-  font-family: map-get($fonts, primary);
+  font-family: $primary;
   font-size: 20px;
   font-weight: 700;
   color: #ffffff99;
@@ -141,7 +140,7 @@ body {
         gap: 66px;
       }
       &__link {
-        font-family: map-get($fonts, primary);
+        font-family: $primary;
         font-size: 20px;
         font-weight: 700;
         color: #ffffff;
@@ -155,6 +154,12 @@ body {
         display: flex;
         .nav__list {
           flex-direction: column;
+        }
+      }
+      .nav__link--shadow {
+        box-shadow: (-40px 420px 120px #ed79b9);
+        @media (max-width: 1280px) {
+          box-shadow: none;
         }
       }
     }
@@ -263,6 +268,12 @@ body {
   filter: $background-drop-title;
 }
 
+.discover-statistic__artwork {
+  @media (max-width: 768px) {
+    box-shadow: (-5px 135px 80px #c211b9);
+  }
+}
+
 .hero-column__discover-title span {
   background: linear-gradient(to right, #ffa6fa, #3c79d4);
   -webkit-background-clip: text;
@@ -298,37 +309,11 @@ body {
   font-size: 20px;
   font-weight: 700;
   margin-block-end: 70px;
+
   @media (max-width: 768px) {
     margin-block-end: 40px;
   }
 }
-
-// .explore-button {
-//   display: flex;
-//   gap: 10px;
-//   padding-block: 20px;
-//   padding-inline-start: 65px;
-//   clip-path: polygon(20% 0%, 100% 0, 100% 50%, 80% 100%, 0% 100%, 0% 50%);
-//   border-radius: 5px;
-//   font-size: 20px;
-//   color: #ffffff;
-//   font-family: map-get($fonts, primary);
-//   border: 5px solid transparent;
-//   border-image: linear-gradient(45deg, #ffa6fa, #3c79d4) 1;
-//   padding: 20px;
-
-//   &:hover {
-  
-//   }
-//   @media (max-width: 768px) {
-//     padding-block: 10px;
-//     font-size: 12px;
-//     padding-block: 10px;
-//     padding-inline-start: 25px;
-//     border: 2px solid transparent;
-//     border-image: linear-gradient(45deg, #ffa6fa, #3c79d4) 1;
-//   }
-// }
 
 .explore-button__arrow {
   padding-inline-end: 30px;
@@ -366,7 +351,7 @@ body {
 }
 .discover-statistic h3 {
   color: #ffffff;
-  font-family: map-get($fonts, statistic-hero);
+  font-family: $statistic-hero;
   font-size: 40px;
   line-height: 50px;
   font-weight: 400;
@@ -376,7 +361,7 @@ body {
 }
 .discover-statistic p {
   color: #ffffff;
-  font-family: map-get($fonts, statistic-caption);
+  font-family: $statistic-caption;
   font-size: 18px;
   line-height: 25px;
   font-weight: 400;
@@ -388,7 +373,7 @@ body {
 
 .hero-column__abstract {
   margin-block-start: 120px;
-  clip-path: polygon(17% 0, 100% 0%, 100% 20%, 100% 100%, 100% 100%, 0 100%, 0% 80%, 0% 7%);
+  clip-path: $hero-clip-path;
   @media (max-width: 768px) {
     margin-block-start: 0px;
   }
@@ -407,7 +392,7 @@ body {
   position: absolute;
   right: 0px;
   bottom: 0;
-  clip-path: polygon(17% 0, 100% 0%, 100% 20%, 100% 100%, 100% 100%, 0 100%, 0% 80%, 0% 20%);
+  clip-path: $hero-clip-path;
   @media (max-width: 1600px) {
     right: -40px;
 
@@ -417,6 +402,9 @@ body {
       max-height: 175px;
       margin-top: -160px;
     }
+  }
+  @media (max-width: 400px) {
+    max-width: 315px;
   }
 }
 .abstract-body__column {
@@ -461,7 +449,7 @@ body {
     font-size: 26px;
     font-weight: 700;
     color: #ffffff;
-    font-family: map-get($fonts, primary);
+    font-family: $primary;
   }
 }
 .nft-header__title {
@@ -570,7 +558,7 @@ body {
   width: 135px;
   gap: 5px;
   font-size: 12px;
-  font-family: map-get($fonts, primary);
+  font-family: $primary;
   img {
     width: 25px;
     padding: 0;
@@ -595,10 +583,6 @@ body {
 }
 
 // COLLECTION
-.collections {
-}
-.collections-body {
-}
 .collections-body__column {
   display: flex;
   align-items: center;
@@ -616,8 +600,7 @@ body {
     width: 100%;
   }
 }
-.explore-collections__title-header {
-}
+
 .explore-collections__cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -648,7 +631,7 @@ body {
 .explore-collections__title-header {
   font-size: 25px;
   font-weight: 700;
-  font-family: map-get($fonts, primary);
+  font-family: $primary;
 }
 
 .explore-collections__cards-link {
@@ -666,7 +649,7 @@ body {
   display: flex;
   justify-content: flex-end;
   gap: 15px;
-  font-family: map-get($fonts, primary);
+  font-family: $primary;
   font-size: 20px;
   @media (max-width: 768px) {
     font-size: 8px;
@@ -689,8 +672,7 @@ body {
     margin-block-start: 100px;
   }
 }
-.card-users__body {
-}
+
 .swiper-wrapper__users {
   display: flex;
 }
@@ -710,7 +692,7 @@ body {
   align-items: center;
   gap: 15px;
   font-size: 26px;
-  font-family: map-get($fonts, primary);
+  font-family: $primary;
   font-weight: 600;
   @media (max-width: 768px) {
     display: none;
@@ -727,7 +709,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: map-get($fonts, secondary);
+  font-family: $secondary;
   border: 2px solid transparent;
   border-radius: 5px;
   color: #ffffff;
@@ -741,7 +723,7 @@ body {
 .user__name {
   margin-block-start: 75px;
   font-size: 25px;
-  font-family: map-get($fonts, secondary);
+  font-family: $secondary;
   font-weight: 500;
   @media (max-width: 992.99px) {
     margin-block-start: 50px;
@@ -756,7 +738,7 @@ body {
   align-items: center;
   margin-block-end: 8px;
   font-size: 20px;
-  font-family: map-get($fonts, secondary);
+  font-family: $secondary;
   font-weight: 400;
   opacity: 0.7;
   @media (max-width: 992.99px) {
@@ -857,7 +839,8 @@ body {
 }
 
 .sellers__title.active {
-  filter: drop-shadow(0 5px 50px rgba(255, 0, 255, 1));
+  filter: drop-shadow(0 15px 40px rgba(255, 0, 255, 1));
+  opacity: 1;
 }
 
 .sellers__title {
@@ -868,6 +851,7 @@ body {
   font-family: map-get($fonts, primary);
   font-weight: 700;
   color: #ffffff;
+  opacity: 0.7;
   margin-block-end: 20px;
   cursor: pointer;
   span {
@@ -1257,18 +1241,25 @@ body {
   font-weight: 500;
   color: white;
   font-size: 15px;
-  @media (max-width: 768px) {
-    font-size: 10px;
-  }
-}
-
-button {
   position: relative;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   cursor: pointer;
   overflow: hidden;
   z-index: 0;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: linear-gradient(45deg, #ff56f6, #3bace2);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+  }
   &:hover {
     background: linear-gradient(45deg, #ff56f6, #3bace2);
     box-shadow: 0 5px 50px rgba(255, 0, 255, 0.8);
@@ -1276,20 +1267,9 @@ button {
   &:active {
     transform: scale(0.9);
   }
-}
-
-button::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  padding: 2px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  background: linear-gradient(45deg, #ff56f6, #3bace2);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  z-index: -1;
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
 }
 
 //FOOTER
@@ -1333,8 +1313,7 @@ button::before {
     }
   }
 }
-.footer__market {
-}
+
 .footer__title {
   position: relative;
   white-space: nowrap;
@@ -1343,6 +1322,7 @@ button::before {
   font-weight: 500;
   font-family: map-get($fonts, footer);
   margin-block-end: 18px;
+  line-height: 30px;
   cursor: pointer;
   @media (max-width: 768px) {
     display: flex;
@@ -1377,8 +1357,6 @@ button::before {
   transition: 0.5s ease-in-out !important;
 }
 
-.footer__items {
-}
 .footer__link,
 .footer__text--ocean {
   font-size: 15px;
@@ -1440,7 +1418,7 @@ button::before {
 }
 
 .hidden-list.active {
-  max-height: 500px; /* достаточно для всех элементов */
+  max-height: 500px;
 }
 .footer-wrapper,
 .mySwiperFooter {

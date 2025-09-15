@@ -1,10 +1,3 @@
-//BACKGROUND-COLOR
-
-$main-background-color: #01204c;
-$secondary-background-color: #20083b;
-$background-nft: linear-gradient(-250deg, #ff56f6, #b936ee, #3bace2, #406aff);
-$background-drop-title: drop-shadow(2px 2px 30px #ffa6fa);
-
 // FONTS
 
 $fonts: (
@@ -42,6 +35,12 @@ $fonts: (
   ),
 );
 
+$primary: map-get($fonts, primary);
+$secondary: map-get($fonts, secondary);
+$hero-heading: map-get($fonts, hero-heading);
+$statistic-caption: map-get($fonts, statistic-caption);
+$statistic-hero: map-get($fonts, statistic-hero);
+
 @font-face {
   font-family: "AlethiaNext";
   src: url("./fonts/AlethiaNext-Light.woff2") format("woff2");
@@ -49,6 +48,35 @@ $fonts: (
   font-style: normal;
 }
 
-$primary: map-get($fonts, primary);
-$secondary: map-get($fonts, secondary);
-$hero-heading: map-get($fonts, hero-heading);
+//BACKGROUND-COLOR
+
+$main-background-color: #01204c;
+$secondary-background-color: #20083b;
+$background-nft: linear-gradient(-250deg, #ff56f6, #b936ee, #3bace2, #406aff);
+$background-drop-title: drop-shadow(2px 2px 30px #ffa6fa);
+
+// CLIP-PATH
+$hero-clip-path: polygon(17% 0, 100% 0%, 100% 20%, 100% 100%, 100% 100%, 0 100%, 0% 80%, 0% 20%);
+
+// BLINK KEYFRAMES
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+[class*="--blink"] {
+  animation: blink 5s infinite;
+}
+[class*="--blink"].active {
+  animation: none;
+}
