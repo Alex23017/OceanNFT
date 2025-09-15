@@ -1459,6 +1459,7 @@ button::before {
 
   @media (max-width: 768px) {
     flex-direction: column !important;
+    justify-content: space-between !important;
   }
 }
 .footer__market--new {
