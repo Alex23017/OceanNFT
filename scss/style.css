@@ -570,6 +570,11 @@ body {
 .abstract-body__column {
   gap: 40px;
 }
+@media (max-width: 400px) {
+  .abstract-body__column {
+    gap: 30px;
+  }
+}
 
 .crypto-logo {
   -webkit-margin-before: 100px;

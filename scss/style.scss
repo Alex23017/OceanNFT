@@ -409,6 +409,10 @@ body {
 }
 .abstract-body__column {
   gap: 40px;
+  @media (max-width: 400px) {
+    gap: 30px;
+  
+  }
 }
 
 // CRYPTO-LOGO
