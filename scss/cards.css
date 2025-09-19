@@ -4,6 +4,12 @@
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: "Spartan";
+  src: url("./fonts/Spartan.ttf") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
 @-webkit-keyframes blink {
   0%, 50% {
     opacity: 1;
@@ -39,11 +45,8 @@
 .cards-body {
   font-family: "Rajdhani", sans-serif;
   border: 2px solid transparent;
-  border-radius: 5px;
   color: #ffffff;
   backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.1) border-box;
-  border: solid 2px rgba(244, 244, 244, 0.142);
 }
 
 .cards-body__column {
@@ -53,8 +56,15 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 40px;
-  margin: 25px 20px;
+  gap: 50px;
+  -webkit-padding-start: 23px;
+          padding-inline-start: 23px;
+  -webkit-margin-before: 16px;
+          margin-block-start: 16px;
+  -webkit-padding-after: 20px;
+          padding-block-end: 20px;
+  -webkit-margin-end: 21px;
+          margin-inline-end: 21px;
 }
 @media (max-width: 1440px) {
   .cards-body__column {
@@ -72,6 +82,8 @@
   font-weight: 700;
   line-height: 35px;
   white-space: nowrap;
+  -webkit-margin-after: 3px;
+          margin-block-end: 3px;
 }
 @media (max-width: 1200px) {
   .card-hand__title {
@@ -79,6 +91,11 @@
   }
 }
 
+.card-hand__user-img {
+  width: 28px;
+  height: 28px;
+  line-height: 45px;
+}
 @media (max-width: 768px) {
   .card-hand__user-img {
     width: 25px;
@@ -90,13 +107,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 3.5px;
+  gap: 3.32px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  line-height: 45px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-margin-before: -6px;
+          margin-block-start: -6px;
 }
 
 .card-hand__user-name {
@@ -115,12 +133,12 @@
 }
 
 .card-hand__text {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
   opacity: 0.7;
   line-height: 35px;
-  -webkit-padding-before: 10px;
-          padding-block-start: 10px;
+  -webkit-padding-before: 8px;
+          padding-block-start: 8px;
 }
 
 .card-hand__eth {
@@ -130,7 +148,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   line-height: 20px;
+  -webkit-margin-start: -12px;
+          margin-inline-start: -12px;
+  -webkit-margin-before: -4px;
+          margin-block-start: -4px;
 }
 
 .card-hand__eth-img {
@@ -141,20 +166,36 @@
 .card-hand__eth-text {
   font-size: 10px;
   font-weight: 700;
+  line-height: 100%;
+  -webkit-margin-start: 1px;
+          margin-inline-start: 1px;
   font-family: "Orbitron", sans-serif;
 }
 
 .card-hand__eth-cost {
   font-family: "Rajdhani", sans-serif;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 400;
   opacity: 0.7;
-  -webkit-margin-start: 5px;
-          margin-inline-start: 5px;
+  -webkit-margin-start: 5.5px;
+          margin-inline-start: 5.5px;
+}
+
+.card-auctions__secs-number {
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+}
+
+.card-auctions__mins-number {
+  -webkit-margin-start: -2px;
+          margin-inline-start: -2px;
 }
 
 .card-auctions__text {
-  line-height: 35px;
+  font-size: 11px;
+  font-weight: 600;
+  -webkit-margin-after: 1px;
+          margin-block-end: 1px;
 }
 @media (max-width: 768px) {
   .card-auctions__text {
@@ -162,20 +203,34 @@
   }
 }
 
+.card-auctions__secs {
+  -webkit-margin-start: 3px;
+          margin-inline-start: 3px;
+}
+
+.card-auctions__hours-number {
+  -webkit-margin-start: -1px;
+          margin-inline-start: -1px;
+}
+
 .card-auctions__time {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 25px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  gap: 17px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-margin-after: 20px;
-          margin-block-end: 20px;
+  -webkit-margin-start: -16px;
+          margin-inline-start: -16px;
+  -webkit-margin-after: 33px;
+          margin-block-end: 33px;
+  -webkit-margin-before: -6px;
+          margin-block-start: -6px;
 }
 @media (max-width: 768px) {
   .card-auctions__time {
@@ -184,14 +239,32 @@
 }
 
 .card-auctions__time h3 {
-  font-size: 18px;
+  font-size: 17px;
+  font-family: "Rajdhani", sans-serif;
   font-weight: 600;
-  line-height: 35px;
+}
+
+.card-auctions__hours-label {
+  -webkit-margin-start: 4px;
+          margin-inline-start: 4px;
+}
+
+.card-auctions__mins-label {
+  -webkit-margin-start: 2px;
+          margin-inline-start: 2px;
+}
+
+.card-auctions__secs-label {
+  -webkit-margin-start: 4px;
+          margin-inline-start: 4px;
 }
 
 .card-auctions__time p {
   font-size: 11px;
   opacity: 0.7;
+  -webkit-margin-before: 3px;
+          margin-block-start: 3px;
+  line-height: 100%;
 }
 
 .column-auctions__button {

@@ -5,32 +5,50 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       title: "Apollo Eth #1289 NFT",
       imageCard: "img/nft-section/Appollo.jpg",
-      userName: "@jhonartist(1)",
+      userName: "@jhonartist",
+      hours: 18,
+      minutes: 25,
+      secs: 44,
     },
     {
       title: "Sassy Bull #1169 Art",
       imageCard: "img/nft-section/Sassy.jpg",
-      userName: "@jhonartist(2)",
+      userName: "@jhonartist",
+      hours: "09",
+      minutes: 15,
+      secs: 23,
     },
     {
-      title: "Satisfying #4289 Art",
+      title: "Satisfying 3D Art",
       imageCard: "./img/nft-section/Satisfying.jpg",
-      userName: "@jhonartist(3)",
+      userName: "@jhonartist",
+      hours: 23,
+      minutes: 32,
+      secs: 56,
     },
     {
       title: "Apollo Eth#1289 NFT",
       imageCard: "./img/nft-section/Appollo.jpg",
-      userName: "@jhonartist(4)",
+      userName: "@jhonartist",
+      hours: "09",
+      minutes: 15,
+      secs: 23,
     },
     {
       title: "Sassy Bull #1169 Art",
       imageCard: "./img/nft-section/Sassy.jpg",
-      userName: "@jhonartist(5)",
+      userName: "@jhonartist",
+      hours: "09",
+      minutes: 15,
+      secs: 23,
     },
     {
-      title: "Satisfying Art #4289 Art",
+      title: "Satisfying Art 3D Art",
       imageCard: "./img/nft-section/Satisfying.jpg",
-      userName: "@jhonartist(6)",
+      userName: "@jhonartist",
+      hours: "09",
+      minutes: 15,
+      secs: 23,
     },
   ];
   const openTop = document.querySelector(".sellers__title");
@@ -46,13 +64,13 @@ document.addEventListener("DOMContentLoaded", () => {
         (product) => `
         <div class="swiper-slide">
           <div class="card-body nft-body"> 
-            <img src="${product.imageCard}" alt="product" loading="lazy" style="width: 100%;" />
+            <img class="nft-body__img" src="${product.imageCard}" alt="product" loading="lazy" style="width: 100%;" />
             
            <div class="cards-body ">
             <div class="cards-body__column nft-body__column">
               <div class="cards-hand nft-cards__hand">
                 <p class="card-hand__title nft-hand__title">${product.title}</p>
-                <div class="card-hand__user nft-hand__user">
+                <div class="card-hand__user nft-hand__user ">
                   <img class="card-hand__user-img nft-hand__user-img" src="./img/hero-section/avatar.svg" alt="avatar" />
                   <p class="card-hand__user-name nft-hand__user-name">${product.userName}</p>
                   <img
@@ -62,8 +80,8 @@ document.addEventListener("DOMContentLoaded", () => {
                   />
                 </div>
                 <p class="card-hand__text nft-hand__text">Reserve price</p>
-                <div class="card-hand__eth">
-                  <img class="card-hand__eth-img" src="./img/hero-section/Ethereum_white.svg" alt="eth" />
+                <div class="card-hand__eth nft-hand__eth">
+                  <img class="card-hand__eth-img nft-hand__eth-img" src="./img/hero-section/Ethereum_white.svg" alt="eth" />
                   <p class="card-hand__eth-text nft-hand__eth-text">ETH 9.31</p>
                   <p class="card-hand__eth-cost nft-hand__eth-cost">($29,8846)</p>
                 </div>
@@ -71,21 +89,24 @@ document.addEventListener("DOMContentLoaded", () => {
               <div class="card-auctions nft-auctions">
                 <p class="card-auctions__text nft-auctions__text">Auction Ends in</p>
                 <div class="card-auctions__time nft-auctions__time">
-                  <div class="card-auctions__hours ">
-                    <h3 class="card-auctions__hours-number">18</h3>
+                  <div class="card-auctions__hours nft-auctions__hours">
+                    <h3 class="card-auctions__hours-number">${product.hours}</h3>
                     <p class="card-auctions__hours-label">Hours</p>
                   </div>
-                  <div class="card-auctions__mins">
-                    <h3 class="card-auctions__mins-number">25</h3>
-                    <p class="card-auctions__mins-label">Mins</p>
+                  <div class="card-auctions__mins nft-auctions__mins">
+                    <h3 class="card-auctions__mins-number nft-auctions__mins-number">${product.minutes}</h3>
+                    <p class="card-auctions__mins-label nft-auctions__mins-label">Mins</p>
                   </div>
-                  <div class="card-auctions__secs">
-                    <h3 class="card-auctions__secs-number">44</h3>
-                    <p class="card-auctions__secs-label">Secs</p>
+                  <div class="card-auctions__secs nft-auctions__secs">
+                    <h3 class="card-auctions__secs-number nft-auctions__secs-number">${product.secs}</h3>
+                    <p class="card-auctions__secs-label nft-auctions__secs-label">Secs</p>
                   </div>
                 </div>
-                <a class="place__button--large decoration--buttons" href="">
-                  Place Bid <img src="./img/hero-section/arrow-right.svg" alt="arrow-right"/></a>
+                <div class="place__button-body nft__button-body"> 
+                <a class="place__button--large decoration--buttons " href="">
+                Place Bid <img src="./img/hero-section/arrow-right.svg" alt="arrow-right"/></a>
+                </div>
+                  </div>
               </div>
             </div>
           </div>

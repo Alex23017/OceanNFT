@@ -1,0 +1,106 @@
+.btn {
+  font-family: "Orbitron", sans-serif;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 9px;
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  place-content: center;
+  padding-block-start: 19.9px;
+  padding-block-end: 18.8px;
+  padding-inline-start: 67.4px;
+  line-height: 100%;
+  font-size: 20px;
+  color: white;
+  border: 0;
+  max-width: 250px;
+  height: 64px;
+  font-weight: 700;
+  clip-path: polygon(15% 0, 100% 0, 100% 80%, 85% 100%, 0 100%, 0 30%);
+  @media (max-width: 400px) {
+    // width: 133px;
+    height: 34px;
+    font-size: 12px;
+    letter-spacing: 0px;
+    padding-block: 11px;
+    padding-inline-start: 28px;
+    padding-inline-end: 20px;
+  }
+}
+
+.btn img {
+  width: 52px;
+}
+
+.btn::after,
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.btn::before {
+  background: linear-gradient(45deg, #ff56f6, #b936ee, #3bace2, #406aff) padding-box;
+  z-index: -2;
+}
+
+.btn::after {
+  background: linear-gradient(240deg, #ff56f6, #b936ee, #3bace2, #406aff) padding-box;
+  z-index: -1;
+  clip-path: polygon(
+    15% 4px,
+    calc(100% - 4px) 4px,
+    calc(100% - 4px) calc(80% - 4px),
+    calc(85% - 2px) calc(100% - 4px),
+    4px calc(100% - 4px),
+    4px calc(30% + 4px)
+  );
+
+  transition: clip-path 500ms;
+  @media (max-width: 400px) {
+    clip-path: polygon(
+      15% 2px,
+      calc(100% - 2px) 2px,
+      calc(100% - 2px) calc(80% - 2px),
+      calc(85% - 2px) calc(100% - 2px),
+      2px calc(100% - 2px),
+      2px calc(30% + 2px)
+    );
+  }
+}
+
+.btn--exlore {
+  display: none;
+  padding-block: 11px;
+  padding-inline: 28px;
+  font-size: 12px;
+  height: 34px;
+  width: 133px;
+  @media (max-width: 768px) {
+    display: flex;
+  }
+}
+
+.btn--exlore::after {
+  background: #01204c;
+  clip-path: polygon(
+    15% 2px,
+    calc(100% - 3px) 3px,
+    calc(100% - 2px) calc(80% - 2px),
+    calc(85% - 2px) calc(100% - 2px),
+    2px calc(100% - 2px),
+    2px calc(30% + 2px)
+  );
+}
+.btn--exlore:hover::after {
+  background: linear-gradient(45deg, #ff56f6, #b936ee, #3bace2, #406aff) padding-box;
+  z-index: -2;
+}
+
+.btn-exlore__img {
+  width: 27px !important ;
+  padding: 0;
+  margin: 0;
+}

@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const users = [
     {
-      name: "Jhones Nickeh",
+      name: "Jhones Nickey",
       email: "@jhonartist",
       avatar: "img/users-section/avatar-man.svg",
       followers: 125,
@@ -61,11 +61,12 @@ document.addEventListener("DOMContentLoaded", () => {
         (user) =>
           `
     <div class="card-container__user swiper-slide">
+    <div class="card-wrapper"> 
       <img class="user-avatar" src=${user.avatar} alt="avatar">
               <img class="user__background" src="img/users-section/background-card.svg" alt="background" />
               <h3 class="user__name">${user.name}</h3>
               <p class="user__email">
-                @jhonartist
+                ${user.email}
                 <img src="img/hero-section/header/verification.svg" alt="verification" />
               </p>
               <div class="user-info">
@@ -85,7 +86,9 @@ document.addEventListener("DOMContentLoaded", () => {
               <div class="user-button">
                 <a class="user-button__follow decoration--buttons" href="">Follow</a>
               </div>
+              </div>
             </div>
+            
        
       `,
       )
@@ -102,6 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
       slidesPerView: 3,
       spaceBetween: 30,
       loop: true,
+      centeredSlides: false,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -113,12 +117,12 @@ document.addEventListener("DOMContentLoaded", () => {
           spaceBetween: 25,
         },
 
-        768: {
+        1440: {
           slidesPerView: 2,
           spaceBetween: 25,
         },
 
-        1200: {
+        1600: {
           slidesPerView: 3,
           spaceBetween: 35,
         },

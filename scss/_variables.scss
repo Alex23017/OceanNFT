@@ -9,10 +9,7 @@ $fonts: (
     "Rajdhani",
     sans-serif,
   ),
-  hero-heading: (
-    "League Spartan",
-    sans-serif,
-  ),
+
   statistic-card: (
     "Roboto",
     sans-serif,
@@ -33,13 +30,20 @@ $fonts: (
     "MuseoModerno",
     sans-serif,
   ),
+  Lato: (
+    "Lato",
+    sans-serif,
+  ),
 );
 
 $primary: map-get($fonts, primary);
 $secondary: map-get($fonts, secondary);
-$hero-heading: map-get($fonts, hero-heading);
 $statistic-caption: map-get($fonts, statistic-caption);
 $statistic-hero: map-get($fonts, statistic-hero);
+$statistic-card: map-get($fonts, statistic-card);
+$footer: map-get($fonts, footer);
+$Lato: map-get($fonts, Lato);
+
 
 @font-face {
   font-family: "AlethiaNext";
@@ -47,6 +51,13 @@ $statistic-hero: map-get($fonts, statistic-hero);
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: "Spartan";
+  src: url("./fonts/Spartan.ttf") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 //BACKGROUND-COLOR
 

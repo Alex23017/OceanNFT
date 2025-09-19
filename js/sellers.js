@@ -12,10 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     { name: "Eleanor Pena", imgUser: "img/sellers-section/avatar-1.svg", count: 74875 },
     { name: "Eleanor Pena", imgUser: "img/sellers-section/avatar-1.svg", count: 74875 },
     { name: "Eleanor Pena", imgUser: "img/sellers-section/avatar-1.svg", count: 74875 },
-    { name: "Eleanor Pena", imgUser: "img/sellers-section/avatar-1.svg", count: 74875 },
-    { name: "Eleanor Pena", imgUser: "img/sellers-section/avatar-1.svg", count: 74875 },
-  ];
-
+  ]
   const openTop = document.querySelector(".sellers__title");
 
   openTop.addEventListener("click", () => {
