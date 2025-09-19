@@ -607,9 +607,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   gap: 55px;
 }
 @media (max-width: 400px) {
@@ -617,6 +614,9 @@ body {
     -webkit-padding-end: 9px;
             padding-inline-end: 9px;
     width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 

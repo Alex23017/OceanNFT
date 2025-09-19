@@ -428,11 +428,12 @@ body {
 }
 .discover-statistic {
   display: flex;
-  justify-content: space-between;
   gap: 55px;
   @media (max-width: 400px) {
     padding-inline-end: 9px;
     width: 100%;
+
+    justify-content: space-between;
   }
 }
 .discover-statistic h3 {
@@ -1965,7 +1966,6 @@ body {
 .footer-wrapper .swiper-slide {
   width: 100% !important;
 }
-
 
 // footer-rights
 
