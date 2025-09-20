@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // СВАЙПЕР
     const swiper = new Swiper(".mySwiperUSERS", {
       slidesPerView: 3,
-      spaceBetween: 30,
+      spaceBetween: 25,
       loop: true,
       centeredSlides: false,
       pagination: {

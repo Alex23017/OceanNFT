@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const userCards = [
     { name: "Eleanor Pena", imgUser: "img/sellers-section/avatar-1.svg", count: 74875 },
+    { name: "Savannah Nguyen", imgUser: "img/sellers-section/avatar-2.jpg", count: 18599 },
     { name: "Eleanor Pena", imgUser: "img/sellers-section/avatar-1.svg", count: 74875 },
     { name: "Eleanor Pena", imgUser: "img/sellers-section/avatar-1.svg", count: 74875 },
     { name: "Eleanor Pena", imgUser: "img/sellers-section/avatar-1.svg", count: 74875 },
@@ -11,18 +12,17 @@ document.addEventListener("DOMContentLoaded", () => {
     { name: "Eleanor Pena", imgUser: "img/sellers-section/avatar-1.svg", count: 74875 },
     { name: "Eleanor Pena", imgUser: "img/sellers-section/avatar-1.svg", count: 74875 },
     { name: "Eleanor Pena", imgUser: "img/sellers-section/avatar-1.svg", count: 74875 },
-    { name: "Eleanor Pena", imgUser: "img/sellers-section/avatar-1.svg", count: 74875 },
-  ]
+  ];
   const openTop = document.querySelector(".sellers__title");
 
   openTop.addEventListener("click", () => {
     const swiperWrapper = document.querySelector(".sellers__cards");
     const dropMenu = document.querySelectorAll(".sellers__dropmenu");
-    openTop.classList.toggle("active")
+    openTop.classList.toggle("active");
     dropMenu.forEach((btn) => {
       btn.classList.toggle("active");
     });
-    const cardsToRender = userCards.slice(0, 14);
+    const cardsToRender = userCards.slice(1, 5);
 
     if (swiperWrapper) {
       swiperWrapper.innerHTML = cardsToRender
