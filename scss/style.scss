@@ -316,10 +316,15 @@ body {
   }
 }
 .discover-statistic__auctions-title {
-  margin-inline-start: -8px;
+  @media (max-width: 400px) {
+    margin-inline-start: -10px;
+  }
 }
 .discover-statistic__artists-title {
-  margin-inline-start: -12px;
+  margin-inline-start: 2px;
+  @media (max-width: 400px) {
+    margin-inline-start: -12px;
+  }
 }
 
 .discover-statistic__artwork {
@@ -335,10 +340,10 @@ body {
   filter: $background-drop-title;
 }
 .column-hand {
-  margin-block-start: 37px;
-  margin-inline-start: 28px;
+  margin-block-start: 43px;
+  margin-inline-start: 18px;
   @media (max-width: 400px) {
-    margin-block-start: 35px;
+    margin-block-start: 40px;
     margin-inline-start: -2px;
   }
 }
@@ -351,6 +356,7 @@ body {
 }
 .column-hand__title {
   font-size: 17.6px;
+  margin-block-start: -5px;
   @media (max-width: 400px) {
     font-size: 17px;
     line-height: 44px;
@@ -540,7 +546,7 @@ body {
   position: absolute;
   right: -2px;
   backdrop-filter: blur(10px);
-  bottom: -32px;
+  bottom: -22px;
   background-image: linear-gradient(90deg, rgba(219, 204, 236, 0.2) 100%);
   border-radius: 15px;
   clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 25%);
@@ -568,6 +574,7 @@ body {
 .abstract-body__column {
   background-image: linear-gradient(90deg, rgba(32, 8, 59, 0.4) 100%);
   border-radius: 15px;
+  padding-block-end: 0px;
   clip-path: polygon(
     15% 2px,
     calc(100% - 2px) 2px,
@@ -577,7 +584,6 @@ body {
     2px calc(23% + 2px)
   );
 
-  padding-block-end: 18px;
   padding-inline: 23px;
   margin: 0;
   width: 336px;
@@ -588,14 +594,15 @@ body {
 }
 
 .column-auctions__time {
-  margin-block-end: 0;
-  margin-block-start: -5px;
-  margin-inline-start: -6px;
+  margin-block-end: 6px;
+  margin-block-start: 14px;
+  margin-inline-start: -1px;
   @media (max-width: 400px) {
     align-items: center;
     justify-content: flex-start;
     margin-inline-start: -5px;
     margin-block-start: -8px;
+    margin-block-end: 3px;
   }
 }
 .column-auctions__time p {
@@ -605,11 +612,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-block-start: 27.64px;
   @media (max-width: 400px) {
-    margin-block-start: 26.64px;
-    margin-block-end: 5px;
-    margin-inline-end: 10px;
     width: 100%;
   }
 }
@@ -756,6 +759,7 @@ body {
   }
 }
 .nft-cards__hand {
+  margin-inline-start: -3px;
   @media (max-width: 400px) {
     margin-block-start: -11px;
   }
@@ -769,7 +773,7 @@ body {
   }
   @media (max-width: 400px) {
     margin-block-start: 39px;
-    margin-inline-start: 20px;
+    margin-inline-start: 23px;
     margin-inline-end: 10px;
     justify-content: space-between;
     gap: 50px;
@@ -846,7 +850,7 @@ body {
   margin-block-start: -6px;
   @media (max-width: 400px) {
     margin-block-start: 0px;
-    margin-block-end: 28px;
+    margin-block-end: -2px;
     width: 107px;
   }
 }
@@ -941,13 +945,14 @@ body {
   }
 }
 .explore-body--nft {
+  margin-block-start: 38px;
   @media (max-width: 400px) {
-    margin-block-start: 40px;
+    margin-block-start: 39px;
   }
 }
 .explore-body--users {
   @media (max-width: 400px) {
-    margin-block-start: 44px;
+    margin-block-start: 41px;
     margin-block-end: 92px;
   }
 }
@@ -1022,13 +1027,13 @@ body {
   gap: 43px;
   padding: 0;
   margin-block: 47px;
-  margin-block-end: 43px;
+  margin-block-end: 46px;
   @media (max-width: 768px) {
     gap: 15px;
     margin-block: 25px;
   }
   @media (max-width: 400px) {
-    margin-block-start: 20px;
+    margin-block-start: 19px;
     margin-inline-start: 1px;
     gap: 17.86px;
   }
@@ -1053,7 +1058,7 @@ body {
   font-size: 26px;
   font-weight: 700;
   font-family: $primary;
-  margin-block-start: 15px;
+  margin-block-start: 20px;
   letter-spacing: 0.3px;
   @media (max-width: 400px) {
     letter-spacing: 0.5px;
@@ -1064,6 +1069,7 @@ body {
   letter-spacing: 0.2px;
   @media (max-width: 400px) {
     margin-inline-start: 1px;
+    margin-block-start: 16px;
   }
 }
 .explore-collections__cards-items {
@@ -1119,7 +1125,7 @@ body {
     max-width: 185px;
   }
   @media (max-width: 400px) {
-    margin-block-start: -3px;
+    margin-block-start: -2px;
     margin-inline-start: 5px;
   }
 }
@@ -1127,7 +1133,7 @@ body {
 // CARD-USERS-SECITON
 
 .card-users {
-  margin-block-start: 166px;
+  margin-block-start: 167px;
   padding-inline: 109px;
   color: #ffffff;
   @media (max-width: 1200px) {
@@ -1221,9 +1227,9 @@ body {
   justify-content: center;
   gap: 8px;
   align-items: center;
-  margin-block-start: -15px;
+  margin-block-start: -12px;
   margin-inline-start: 21px;
-  margin-block-end: 8px;
+  margin-block-end: 7px;
   font-size: 20px;
   line-height: 46px;
   font-family: $secondary;
@@ -1265,6 +1271,7 @@ body {
     justify-content: space-between;
     gap: 40.57px;
     padding-inline: 27px;
+    margin-block-end: 16px;
   }
 }
 .user-info h3 {
@@ -1298,7 +1305,6 @@ body {
   margin-inline-start: 2px;
 }
 .user-info__followers-number {
-  margin-block-end: 7px;
 }
 
 .user-button {
@@ -1306,20 +1312,23 @@ body {
   justify-content: center;
   margin-block-start: 23px;
   margin-block-end: 40px;
-  margin-inline-start: 5px;
+  padding-inline-start: 103px;
+  padding-inline-end: 91px;
   @media (max-width: 768px) {
     margin-block: 20px;
   }
   @media (max-width: 400px) {
     margin-block-start: 13px;
-    margin-inline-start: 7.5px;
     margin-block-end: 28px;
+    padding-inline-start: 90px;
+    padding-inline-start: 72px;
+    padding-inline-end: 64px;
   }
 }
 .user-button__follow {
   text-align: center;
-  padding-block: 13px;
-  padding-inline: 74px;
+  padding-block: 14px;
+  padding-inline: 71px;
   width: 100%;
   max-width: 250px;
   min-width: 150px;
@@ -1328,12 +1337,11 @@ body {
   font-size: 20px;
   line-height: 100%;
   @media (max-width: 768px) {
-    padding-inline: 51px;
+    padding-inline: 52px;
   }
   @media (max-width: 400px) {
     font-size: 13.78px;
-    padding-block: 10px;
-    padding-inline: 52px;
+    padding-block: 8px;
     width: 162.5px;
     height: 35px;
   }
@@ -1506,6 +1514,7 @@ body {
   padding-block-start: 24.5px;
   padding-block-end: 24px;
   border-radius: 100%;
+  width: 70px;
   @media (max-width: 768px) {
     padding-block: 19px;
     max-width: 50px;
@@ -1516,11 +1525,13 @@ body {
   flex-direction: column;
   margin-inline-start: 8.14px;
   margin-inline-end: 17.61px;
+  margin-block-start: -5px;
   gap: 15.72px;
   width: 159px;
   @media (max-width: 400px) {
     gap: 11.5px;
     margin-inline-start: 10.14px;
+    margin-block-start: 0px;
   }
 }
 .sellers-card__user-name {
@@ -1600,7 +1611,7 @@ body {
   display: flex;
   justify-content: center;
   clip-path: none;
-  padding-block: 14px;
+  padding-block: 16px;
   line-height: 100%;
   width: 235px;
   font-size: 20px;
@@ -1609,8 +1620,8 @@ body {
   border: 2px solid transparent;
 }
 .place__button-body {
-  margin-block-start: 30px;
-  margin-block-end: 10px;
+  margin-block-start: 28px;
+  margin-block-end: 17px;
   @media (max-width: 400px) {
     margin-inline-start: -5px;
     width: 115px;
@@ -1649,11 +1660,19 @@ body {
     gap: 25px;
   }
 }
+.nft__button--large {
+  @media (max-width: 400px) {
+    font-size: 13.5px;
+  }
+}
 
 .nft__button-body {
-  margin-inline-start: -18px;
+  margin-block-start: 45px;
+  margin-inline-start: -16px;
   @media (max-width: 400px) {
     margin-inline-start: -13px;
+    margin-block-start: 30px;
+    margin-block-end: 14px;
   }
 }
 .place__button--small {
@@ -1702,7 +1721,7 @@ body {
 // WHAT-SECTION
 
 .what {
-  margin-block-start: 62px;
+  margin-block-start: 60px;
   @media (max-width: 768px) {
     margin-block-start: 0px;
   }
@@ -1733,7 +1752,7 @@ body {
 .what__card {
   display: flex;
   position: absolute;
-  top: 220px;
+  top: 217px;
   right: 138px;
   max-width: 577px;
   align-items: flex-start;
@@ -1784,8 +1803,8 @@ body {
   font-size: 44.51px;
   font-weight: 800;
   line-height: 60px;
-  margin-block-start: -5px;
-  margin-inline-start: 10px;
+  margin-block-start: -3px;
+  margin-inline-start: 12px;
   @media (max-width: 1200px) {
     font-size: 25.87px;
     line-height: 20px;
@@ -1853,11 +1872,8 @@ body {
     padding-inline: 25px;
   }
 
-  @media (max-width: 7068px) {
-    margin-block-start: 300px;
-  }
   @media (max-width: 400px) {
-    margin-block-start: 210px;
+    margin-block-start: 230px;
   }
 }
 .subscribe__body {
@@ -1871,7 +1887,7 @@ body {
     align-items: center;
   }
   @media (max-width: 400px) {
-    gap: 145px;
+    gap: 148px;
   }
 }
 
@@ -1902,15 +1918,21 @@ body {
   font-weight: 700;
   font-size: 40px;
   line-height: 100%;
+  margin-block-start: -15px;
   @media (max-width: 768px) {
     font-size: 26.27px;
+  }
+  @media (max-width: 400px) {
+    margin-block-start: -20px;
+  
   }
 }
 .subscribe__text {
   font-family: map-get($fonts, footer);
   font-weight: 400;
   font-size: 20px;
-  margin-block-start: 27.64px;
+  margin-block-start: 35px;
+  margin-inline-start: 2px;
   letter-spacing: 0px;
   margin-block-end: 49.74px;
   line-height: 35px;
@@ -1920,10 +1942,12 @@ body {
     margin-block-end: 34px;
     line-height: 23px;
     margin-inline-start: 2px;
+
   }
 }
 .subscribe__form {
   display: flex;
+  margin-block-end: -5px;
   font-family: map-get($fonts, footer);
   gap: 8.84px;
   @media (max-width: 1280px) {
@@ -2133,6 +2157,9 @@ body {
     margin-block-end: 14px;
   }
 }
+.footer__list--desk {
+  margin-block-start: 25px !important;
+}
 
 .footer__link,
 .footer__text--ocean {
@@ -2150,6 +2177,8 @@ body {
 }
 .footer__faq--desktop {
   display: grid;
+  margin-inline-start: 0px;
+  margin-block-start: 2px;
   grid-template-columns: repeat(5, minmax(175px, 1fr));
   gap: 33px;
   padding-inline-end: 30px;
@@ -2172,18 +2201,43 @@ body {
   height: 1px;
   max-width: 100%;
   padding-inline: 100px;
-  margin-block-start: 160px;
-  margin-block-end: 95px;
+  margin-block-start: 159px;
+  margin-block-end: 97px;
   @media (max-width: 768px) {
     margin-block-start: 107px;
     margin-block-end: 25px;
   }
+  @media (max-width: 400px) {
+    margin-block-start: 108px;
+  }
 }
 
+.footer__collectibles {
+  margin-inline-start: 2px;
+}
+.footer__support {
+  margin-inline-start: 5px;
+}
+.footer__legal {
+  margin-inline-start: 6px;
+}
+.footer__follow {
+  margin-inline-start: 8px;
+}
+
+@media (max-width: 400px) {
+  .footer__collectibles,
+  .footer__support,
+  .footer__support,
+  .footer__legal,
+  .footer__follow {
+    margin-inline-start: 0px;
+  }
+}
 .line--second {
   margin-inline: 0;
   margin-block-start: 58px;
-  margin-block-end: 33px;
+  margin-block-end: 35px;
   @media (max-width: 768px) {
     display: none;
   }
@@ -2248,7 +2302,8 @@ body {
     margin-block-start: 22px;
   }
   @media (max-width: 400px) {
-    margin-block-start: 9px;
+    margin-block-start: 14px;
+
     gap: 44px;
     margin-block-end: 97px;
   }
@@ -2272,8 +2327,10 @@ body {
 }
 .footer__terms {
   display: flex;
-  gap: 6px;
+  font-size: 15.48px;
   align-items: center;
+  margin-inline-end: 4px;
+  margin-block-start: -5px;
   p {
     cursor: pointer;
     opacity: 0.7;
@@ -2282,15 +2339,15 @@ body {
     }
   }
   @media (max-width: 400px) {
-    font-size: 15.48px;
     gap: 18px;
-    margin-inline-start: 3px;
+    margin-inline-start: 9px;
   }
 }
 .footer__terms p:not(:last-child)::after {
   content: "|";
   color: white;
-  margin-inline: 8px;
+  margin-inline: 8.84px;
+
   @media (max-width: 768px) {
     content: "";
   }
@@ -2301,7 +2358,7 @@ body {
   }
 }
 .footer__title img {
-margin-inline-end: 23px;
+  margin-inline-end: 23px;
 }
 .footer__title--decoration.active {
   filter: drop-shadow(5px 5px 5px rgba(255, 0, 255, 1));
@@ -2344,6 +2401,12 @@ margin-inline-end: 23px;
 }
 
 .column-auctions {
+  margin-block-start: 41px;
+  margin-inline-end: -5px;
+  @media (max-width: 400px) {
+    margin-block-start: 30px;
+    margin-inline-end: 10px;
+  }
 }
 
 .column-hand__title {
@@ -2362,16 +2425,17 @@ margin-inline-end: 23px;
   line-height: 100%;
   @media (max-width: 400px) {
     margin-block-start: 7px;
-    margin-inline-start: -4px;
+    margin-inline-start: 0px;
     letter-spacing: 0px;
-    gap: 8px;
+    gap: 4px;
   }
 }
 .column-auctions__text {
-  line-height: 35px;
+  margin-block-end: -5px;
+  margin-inline-start: 5px;
   @media (max-width: 400px) {
     margin-inline-start: 0px;
-    margin-block-end: 3px;
+    margin-block-end: 10px;
   }
 }
 .column-auctions__buttons {
@@ -2385,12 +2449,14 @@ margin-inline-end: 23px;
     margin-inline-end: 0px;
   }
 }
+
 .column-hand__text {
-  padding-block-start: 6px;
+  padding-block-start: 8px;
   margin-inline-start: 1px;
   @media (max-width: 400px) {
     font-size: 10.5px;
     margin-inline-start: 0px;
+    padding-block-start: 5px;
   }
 }
 .column-hand__eth-text {

@@ -438,14 +438,22 @@ body {
   }
 }
 
-.discover-statistic__auctions-title {
-  -webkit-margin-start: -8px;
-          margin-inline-start: -8px;
+@media (max-width: 400px) {
+  .discover-statistic__auctions-title {
+    -webkit-margin-start: -10px;
+            margin-inline-start: -10px;
+  }
 }
 
 .discover-statistic__artists-title {
-  -webkit-margin-start: -12px;
-          margin-inline-start: -12px;
+  -webkit-margin-start: 2px;
+          margin-inline-start: 2px;
+}
+@media (max-width: 400px) {
+  .discover-statistic__artists-title {
+    -webkit-margin-start: -12px;
+            margin-inline-start: -12px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -465,15 +473,15 @@ body {
 }
 
 .column-hand {
-  -webkit-margin-before: 37px;
-          margin-block-start: 37px;
-  -webkit-margin-start: 28px;
-          margin-inline-start: 28px;
+  -webkit-margin-before: 43px;
+          margin-block-start: 43px;
+  -webkit-margin-start: 18px;
+          margin-inline-start: 18px;
 }
 @media (max-width: 400px) {
   .column-hand {
-    -webkit-margin-before: 35px;
-            margin-block-start: 35px;
+    -webkit-margin-before: 40px;
+            margin-block-start: 40px;
     -webkit-margin-start: -2px;
             margin-inline-start: -2px;
   }
@@ -491,6 +499,8 @@ body {
 
 .column-hand__title {
   font-size: 17.6px;
+  -webkit-margin-before: -5px;
+          margin-block-start: -5px;
 }
 @media (max-width: 400px) {
   .column-hand__title {
@@ -762,7 +772,7 @@ body {
   position: absolute;
   right: -2px;
   backdrop-filter: blur(10px);
-  bottom: -32px;
+  bottom: -22px;
   background-image: -webkit-gradient(linear, left top, right top, to(rgba(219, 204, 236, 0.2)));
   background-image: linear-gradient(90deg, rgba(219, 204, 236, 0.2) 100%);
   border-radius: 15px;
@@ -801,9 +811,9 @@ body {
   background-image: -webkit-gradient(linear, left top, right top, to(rgba(32, 8, 59, 0.4)));
   background-image: linear-gradient(90deg, rgba(32, 8, 59, 0.4) 100%);
   border-radius: 15px;
+  -webkit-padding-after: 0px;
+          padding-block-end: 0px;
   clip-path: polygon(15% 2px, calc(100% - 2px) 2px, calc(100% - 2px) calc(100% - 2px), calc(100% - 2px) calc(100% - 2px), 2px calc(100% - 2px), 2px calc(23% + 2px));
-  -webkit-padding-after: 18px;
-          padding-block-end: 18px;
   padding-inline: 23px;
   margin: 0;
   width: 336px;
@@ -818,12 +828,12 @@ body {
 }
 
 .column-auctions__time {
-  -webkit-margin-after: 0;
-          margin-block-end: 0;
-  -webkit-margin-before: -5px;
-          margin-block-start: -5px;
-  -webkit-margin-start: -6px;
-          margin-inline-start: -6px;
+  -webkit-margin-after: 6px;
+          margin-block-end: 6px;
+  -webkit-margin-before: 14px;
+          margin-block-start: 14px;
+  -webkit-margin-start: -1px;
+          margin-inline-start: -1px;
 }
 @media (max-width: 400px) {
   .column-auctions__time {
@@ -837,6 +847,8 @@ body {
             margin-inline-start: -5px;
     -webkit-margin-before: -8px;
             margin-block-start: -8px;
+    -webkit-margin-after: 3px;
+            margin-block-end: 3px;
   }
 }
 
@@ -856,17 +868,9 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-margin-before: 27.64px;
-          margin-block-start: 27.64px;
 }
 @media (max-width: 400px) {
   .column-auctions__body {
-    -webkit-margin-before: 26.64px;
-            margin-block-start: 26.64px;
-    -webkit-margin-after: 5px;
-            margin-block-end: 5px;
-    -webkit-margin-end: 10px;
-            margin-inline-end: 10px;
     width: 100%;
   }
 }
@@ -1079,6 +1083,10 @@ body {
   }
 }
 
+.nft-cards__hand {
+  -webkit-margin-start: -3px;
+          margin-inline-start: -3px;
+}
 @media (max-width: 400px) {
   .nft-cards__hand {
     -webkit-margin-before: -11px;
@@ -1104,8 +1112,8 @@ body {
   .nft-body__column {
     -webkit-margin-before: 39px;
             margin-block-start: 39px;
-    -webkit-margin-start: 20px;
-            margin-inline-start: 20px;
+    -webkit-margin-start: 23px;
+            margin-inline-start: 23px;
     -webkit-margin-end: 10px;
             margin-inline-end: 10px;
     -webkit-box-pack: justify;
@@ -1225,8 +1233,8 @@ body {
   .nft-auctions__time {
     -webkit-margin-before: 0px;
             margin-block-start: 0px;
-    -webkit-margin-after: 28px;
-            margin-block-end: 28px;
+    -webkit-margin-after: -2px;
+            margin-block-end: -2px;
     width: 107px;
   }
 }
@@ -1363,17 +1371,21 @@ body {
   }
 }
 
+.explore-body--nft {
+  -webkit-margin-before: 38px;
+          margin-block-start: 38px;
+}
 @media (max-width: 400px) {
   .explore-body--nft {
-    -webkit-margin-before: 40px;
-            margin-block-start: 40px;
+    -webkit-margin-before: 39px;
+            margin-block-start: 39px;
   }
 }
 
 @media (max-width: 400px) {
   .explore-body--users {
-    -webkit-margin-before: 44px;
-            margin-block-start: 44px;
+    -webkit-margin-before: 41px;
+            margin-block-start: 41px;
     -webkit-margin-after: 92px;
             margin-block-end: 92px;
   }
@@ -1486,8 +1498,8 @@ body {
   gap: 43px;
   padding: 0;
   margin-block: 47px;
-  -webkit-margin-after: 43px;
-          margin-block-end: 43px;
+  -webkit-margin-after: 46px;
+          margin-block-end: 46px;
 }
 @media (max-width: 768px) {
   .explore-collections__cards {
@@ -1497,8 +1509,8 @@ body {
 }
 @media (max-width: 400px) {
   .explore-collections__cards {
-    -webkit-margin-before: 20px;
-            margin-block-start: 20px;
+    -webkit-margin-before: 19px;
+            margin-block-start: 19px;
     -webkit-margin-start: 1px;
             margin-inline-start: 1px;
     gap: 17.86px;
@@ -1527,8 +1539,8 @@ body {
   font-size: 26px;
   font-weight: 700;
   font-family: "Orbitron", sans-serif;
-  -webkit-margin-before: 15px;
-          margin-block-start: 15px;
+  -webkit-margin-before: 20px;
+          margin-block-start: 20px;
   letter-spacing: 0.3px;
 }
 @media (max-width: 400px) {
@@ -1547,6 +1559,8 @@ body {
   .explore-collections__title-header {
     -webkit-margin-start: 1px;
             margin-inline-start: 1px;
+    -webkit-margin-before: 16px;
+            margin-block-start: 16px;
   }
 }
 
@@ -1625,16 +1639,16 @@ body {
 }
 @media (max-width: 400px) {
   .explore-img img {
-    -webkit-margin-before: -3px;
-            margin-block-start: -3px;
+    -webkit-margin-before: -2px;
+            margin-block-start: -2px;
     -webkit-margin-start: 5px;
             margin-inline-start: 5px;
   }
 }
 
 .card-users {
-  -webkit-margin-before: 166px;
-          margin-block-start: 166px;
+  -webkit-margin-before: 167px;
+          margin-block-start: 167px;
   padding-inline: 109px;
   color: #ffffff;
 }
@@ -1780,12 +1794,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-margin-before: -15px;
-          margin-block-start: -15px;
+  -webkit-margin-before: -12px;
+          margin-block-start: -12px;
   -webkit-margin-start: 21px;
           margin-inline-start: 21px;
-  -webkit-margin-after: 8px;
-          margin-block-end: 8px;
+  -webkit-margin-after: 7px;
+          margin-block-end: 7px;
   font-size: 20px;
   line-height: 46px;
   font-family: "Rajdhani", sans-serif;
@@ -1847,6 +1861,8 @@ body {
             justify-content: space-between;
     gap: 40.57px;
     padding-inline: 27px;
+    -webkit-margin-after: 16px;
+            margin-block-end: 16px;
   }
 }
 
@@ -1890,11 +1906,6 @@ body {
           margin-inline-start: 2px;
 }
 
-.user-info__followers-number {
-  -webkit-margin-after: 7px;
-          margin-block-end: 7px;
-}
-
 .user-button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1906,8 +1917,10 @@ body {
           margin-block-start: 23px;
   -webkit-margin-after: 40px;
           margin-block-end: 40px;
-  -webkit-margin-start: 5px;
-          margin-inline-start: 5px;
+  -webkit-padding-start: 103px;
+          padding-inline-start: 103px;
+  -webkit-padding-end: 91px;
+          padding-inline-end: 91px;
 }
 @media (max-width: 768px) {
   .user-button {
@@ -1918,17 +1931,21 @@ body {
   .user-button {
     -webkit-margin-before: 13px;
             margin-block-start: 13px;
-    -webkit-margin-start: 7.5px;
-            margin-inline-start: 7.5px;
     -webkit-margin-after: 28px;
             margin-block-end: 28px;
+    -webkit-padding-start: 90px;
+            padding-inline-start: 90px;
+    -webkit-padding-start: 72px;
+            padding-inline-start: 72px;
+    -webkit-padding-end: 64px;
+            padding-inline-end: 64px;
   }
 }
 
 .user-button__follow {
   text-align: center;
-  padding-block: 13px;
-  padding-inline: 74px;
+  padding-block: 14px;
+  padding-inline: 71px;
   width: 100%;
   max-width: 250px;
   min-width: 150px;
@@ -1939,14 +1956,13 @@ body {
 }
 @media (max-width: 768px) {
   .user-button__follow {
-    padding-inline: 51px;
+    padding-inline: 52px;
   }
 }
 @media (max-width: 400px) {
   .user-button__follow {
     font-size: 13.78px;
-    padding-block: 10px;
-    padding-inline: 52px;
+    padding-block: 8px;
     width: 162.5px;
     height: 35px;
   }
@@ -2198,6 +2214,7 @@ body {
   -webkit-padding-after: 24px;
           padding-block-end: 24px;
   border-radius: 100%;
+  width: 70px;
 }
 @media (max-width: 768px) {
   .sellers-card__avatar {
@@ -2218,6 +2235,8 @@ body {
           margin-inline-start: 8.14px;
   -webkit-margin-end: 17.61px;
           margin-inline-end: 17.61px;
+  -webkit-margin-before: -5px;
+          margin-block-start: -5px;
   gap: 15.72px;
   width: 159px;
 }
@@ -2226,6 +2245,8 @@ body {
     gap: 11.5px;
     -webkit-margin-start: 10.14px;
             margin-inline-start: 10.14px;
+    -webkit-margin-before: 0px;
+            margin-block-start: 0px;
   }
 }
 
@@ -2347,7 +2368,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   clip-path: none;
-  padding-block: 14px;
+  padding-block: 16px;
   line-height: 100%;
   width: 235px;
   font-size: 20px;
@@ -2357,10 +2378,10 @@ body {
 }
 
 .place__button-body {
-  -webkit-margin-before: 30px;
-          margin-block-start: 30px;
-  -webkit-margin-after: 10px;
-          margin-block-end: 10px;
+  -webkit-margin-before: 28px;
+          margin-block-start: 28px;
+  -webkit-margin-after: 17px;
+          margin-block-end: 17px;
 }
 @media (max-width: 400px) {
   .place__button-body {
@@ -2415,14 +2436,26 @@ body {
   }
 }
 
+@media (max-width: 400px) {
+  .nft__button--large {
+    font-size: 13.5px;
+  }
+}
+
 .nft__button-body {
-  -webkit-margin-start: -18px;
-          margin-inline-start: -18px;
+  -webkit-margin-before: 45px;
+          margin-block-start: 45px;
+  -webkit-margin-start: -16px;
+          margin-inline-start: -16px;
 }
 @media (max-width: 400px) {
   .nft__button-body {
     -webkit-margin-start: -13px;
             margin-inline-start: -13px;
+    -webkit-margin-before: 30px;
+            margin-block-start: 30px;
+    -webkit-margin-after: 14px;
+            margin-block-end: 14px;
   }
 }
 
@@ -2479,8 +2512,8 @@ body {
 }
 
 .what {
-  -webkit-margin-before: 62px;
-          margin-block-start: 62px;
+  -webkit-margin-before: 60px;
+          margin-block-start: 60px;
 }
 @media (max-width: 768px) {
   .what {
@@ -2526,7 +2559,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  top: 220px;
+  top: 217px;
   right: 138px;
   max-width: 577px;
   -webkit-box-align: start;
@@ -2600,10 +2633,10 @@ body {
   font-size: 44.51px;
   font-weight: 800;
   line-height: 60px;
-  -webkit-margin-before: -5px;
-          margin-block-start: -5px;
-  -webkit-margin-start: 10px;
-          margin-inline-start: 10px;
+  -webkit-margin-before: -3px;
+          margin-block-start: -3px;
+  -webkit-margin-start: 12px;
+          margin-inline-start: 12px;
 }
 @media (max-width: 1200px) {
   .what__title {
@@ -2710,16 +2743,10 @@ body {
     padding-inline: 25px;
   }
 }
-@media (max-width: 7068px) {
-  .subscribe {
-    -webkit-margin-before: 300px;
-            margin-block-start: 300px;
-  }
-}
 @media (max-width: 400px) {
   .subscribe {
-    -webkit-margin-before: 210px;
-            margin-block-start: 210px;
+    -webkit-margin-before: 230px;
+            margin-block-start: 230px;
   }
 }
 
@@ -2749,7 +2776,7 @@ body {
 }
 @media (max-width: 400px) {
   .subscribe__body {
-    gap: 145px;
+    gap: 148px;
   }
 }
 
@@ -2790,10 +2817,18 @@ body {
   font-weight: 700;
   font-size: 40px;
   line-height: 100%;
+  -webkit-margin-before: -15px;
+          margin-block-start: -15px;
 }
 @media (max-width: 768px) {
   .subscribe__title {
     font-size: 26.27px;
+  }
+}
+@media (max-width: 400px) {
+  .subscribe__title {
+    -webkit-margin-before: -20px;
+            margin-block-start: -20px;
   }
 }
 
@@ -2801,8 +2836,10 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 20px;
-  -webkit-margin-before: 27.64px;
-          margin-block-start: 27.64px;
+  -webkit-margin-before: 35px;
+          margin-block-start: 35px;
+  -webkit-margin-start: 2px;
+          margin-inline-start: 2px;
   letter-spacing: 0px;
   -webkit-margin-after: 49.74px;
           margin-block-end: 49.74px;
@@ -2825,6 +2862,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-margin-after: -5px;
+          margin-block-end: -5px;
   font-family: "Inter", sans-serif;
   gap: 8.84px;
 }
@@ -3125,6 +3164,11 @@ body {
   }
 }
 
+.footer__list--desk {
+  -webkit-margin-before: 25px !important;
+          margin-block-start: 25px !important;
+}
+
 .footer__link,
 .footer__text--ocean {
   font-size: 15.48px;
@@ -3144,6 +3188,10 @@ body {
 
 .footer__faq--desktop {
   display: grid;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-before: 2px;
+          margin-block-start: 2px;
   grid-template-columns: repeat(5, minmax(175px, 1fr));
   gap: 33px;
   -webkit-padding-end: 30px;
@@ -3170,10 +3218,10 @@ body {
   height: 1px;
   max-width: 100%;
   padding-inline: 100px;
-  -webkit-margin-before: 160px;
-          margin-block-start: 160px;
-  -webkit-margin-after: 95px;
-          margin-block-end: 95px;
+  -webkit-margin-before: 159px;
+          margin-block-start: 159px;
+  -webkit-margin-after: 97px;
+          margin-block-end: 97px;
 }
 @media (max-width: 768px) {
   .line {
@@ -3183,13 +3231,49 @@ body {
             margin-block-end: 25px;
   }
 }
+@media (max-width: 400px) {
+  .line {
+    -webkit-margin-before: 108px;
+            margin-block-start: 108px;
+  }
+}
 
+.footer__collectibles {
+  -webkit-margin-start: 2px;
+          margin-inline-start: 2px;
+}
+
+.footer__support {
+  -webkit-margin-start: 5px;
+          margin-inline-start: 5px;
+}
+
+.footer__legal {
+  -webkit-margin-start: 6px;
+          margin-inline-start: 6px;
+}
+
+.footer__follow {
+  -webkit-margin-start: 8px;
+          margin-inline-start: 8px;
+}
+
+@media (max-width: 400px) {
+  .footer__collectibles,
+  .footer__support,
+  .footer__support,
+  .footer__legal,
+  .footer__follow {
+    -webkit-margin-start: 0px;
+            margin-inline-start: 0px;
+  }
+}
 .line--second {
   margin-inline: 0;
   -webkit-margin-before: 58px;
           margin-block-start: 58px;
-  -webkit-margin-after: 33px;
-          margin-block-end: 33px;
+  -webkit-margin-after: 35px;
+          margin-block-end: 35px;
 }
 @media (max-width: 768px) {
   .line--second {
@@ -3285,8 +3369,8 @@ body {
 }
 @media (max-width: 400px) {
   .footer__policy {
-    -webkit-margin-before: 9px;
-            margin-block-start: 9px;
+    -webkit-margin-before: 14px;
+            margin-block-start: 14px;
     gap: 44px;
     -webkit-margin-after: 97px;
             margin-block-end: 97px;
@@ -3319,10 +3403,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 6px;
+  font-size: 15.48px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-margin-end: 4px;
+          margin-inline-end: 4px;
+  -webkit-margin-before: -5px;
+          margin-block-start: -5px;
 }
 .footer__terms p {
   cursor: pointer;
@@ -3333,17 +3421,16 @@ body {
 }
 @media (max-width: 400px) {
   .footer__terms {
-    font-size: 15.48px;
     gap: 18px;
-    -webkit-margin-start: 3px;
-            margin-inline-start: 3px;
+    -webkit-margin-start: 9px;
+            margin-inline-start: 9px;
   }
 }
 
 .footer__terms p:not(:last-child)::after {
   content: "|";
   color: white;
-  margin-inline: 8px;
+  margin-inline: 8.84px;
 }
 @media (max-width: 768px) {
   .footer__terms p:not(:last-child)::after {
@@ -3426,6 +3513,21 @@ body {
   }
 }
 
+.column-auctions {
+  -webkit-margin-before: 41px;
+          margin-block-start: 41px;
+  -webkit-margin-end: -5px;
+          margin-inline-end: -5px;
+}
+@media (max-width: 400px) {
+  .column-auctions {
+    -webkit-margin-before: 30px;
+            margin-block-start: 30px;
+    -webkit-margin-end: 10px;
+            margin-inline-end: 10px;
+  }
+}
+
 .column-hand__title {
   line-height: 100%;
   -webkit-margin-after: 0px;
@@ -3450,22 +3552,25 @@ body {
   .column-hand__user {
     -webkit-margin-before: 7px;
             margin-block-start: 7px;
-    -webkit-margin-start: -4px;
-            margin-inline-start: -4px;
+    -webkit-margin-start: 0px;
+            margin-inline-start: 0px;
     letter-spacing: 0px;
-    gap: 8px;
+    gap: 4px;
   }
 }
 
 .column-auctions__text {
-  line-height: 35px;
+  -webkit-margin-after: -5px;
+          margin-block-end: -5px;
+  -webkit-margin-start: 5px;
+          margin-inline-start: 5px;
 }
 @media (max-width: 400px) {
   .column-auctions__text {
     -webkit-margin-start: 0px;
             margin-inline-start: 0px;
-    -webkit-margin-after: 3px;
-            margin-block-end: 3px;
+    -webkit-margin-after: 10px;
+            margin-block-end: 10px;
   }
 }
 
@@ -3486,8 +3591,8 @@ body {
 }
 
 .column-hand__text {
-  -webkit-padding-before: 6px;
-          padding-block-start: 6px;
+  -webkit-padding-before: 8px;
+          padding-block-start: 8px;
   -webkit-margin-start: 1px;
           margin-inline-start: 1px;
 }
@@ -3496,6 +3601,8 @@ body {
     font-size: 10.5px;
     -webkit-margin-start: 0px;
             margin-inline-start: 0px;
+    -webkit-padding-before: 5px;
+            padding-block-start: 5px;
   }
 }
 

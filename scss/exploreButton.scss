@@ -3,14 +3,15 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-  gap: 9px;
+  gap: 11px;
   position: relative;
   isolation: isolate;
   display: flex;
   place-content: center;
   padding-block-start: 19.9px;
   padding-block-end: 18.8px;
-  padding-inline-start: 67.4px;
+  padding-inline-start: 95.4px;
+  padding-inline-end: 40px;
   line-height: 100%;
   font-size: 20px;
   color: white;
@@ -28,10 +29,6 @@
     padding-inline-start: 28px;
     padding-inline-end: 20px;
   }
-}
-
-.btn img {
-  width: 52px;
 }
 
 .btn::after,
@@ -101,7 +98,9 @@
 }
 
 .btn-exlore__img {
-  width: 27px !important ;
-  padding: 0;
-  margin: 0;
+  @media (max-width: 400px) {
+    width: 27px !important ;
+    padding: 0;
+    margin: 0;
+  }
 }

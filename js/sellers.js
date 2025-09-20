@@ -22,7 +22,14 @@ document.addEventListener("DOMContentLoaded", () => {
     dropMenu.forEach((btn) => {
       btn.classList.toggle("active");
     });
-    const cardsToRender = userCards.slice(1, 5);
+
+    let cardsToRender;
+
+    if (window.innerWidth < 768) {
+      cardsToRender = userCards.slice(1, 5);
+    } else {
+      cardsToRender = userCards;
+    }
 
     if (swiperWrapper) {
       swiperWrapper.innerHTML = cardsToRender

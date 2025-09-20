@@ -7,7 +7,7 @@
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
-  gap: 9px;
+  gap: 11px;
   position: relative;
   isolation: isolate;
   display: flex;
@@ -16,8 +16,10 @@
           padding-block-start: 19.9px;
   -webkit-padding-after: 18.8px;
           padding-block-end: 18.8px;
-  -webkit-padding-start: 67.4px;
-          padding-inline-start: 67.4px;
+  -webkit-padding-start: 95.4px;
+          padding-inline-start: 95.4px;
+  -webkit-padding-end: 40px;
+          padding-inline-end: 40px;
   line-height: 100%;
   font-size: 20px;
   color: white;
@@ -38,10 +40,6 @@
     -webkit-padding-end: 20px;
             padding-inline-end: 20px;
   }
-}
-
-.btn img {
-  width: 52px;
 }
 
 .btn::after,
@@ -98,8 +96,10 @@
   z-index: -2;
 }
 
-.btn-exlore__img {
-  width: 27px !important;
-  padding: 0;
-  margin: 0;
+@media (max-width: 400px) {
+  .btn-exlore__img {
+    width: 27px !important;
+    padding: 0;
+    margin: 0;
+  }
 }/*# sourceMappingURL=exploreButton.css.map */

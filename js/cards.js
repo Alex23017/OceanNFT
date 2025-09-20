@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
                   </div>
                 </div>
                 <div class="place__button-body nft__button-body"> 
-                <a class="place__button--large decoration--buttons " href="">
+                <a class="place__button--large nft__button--large decoration--buttons " href="">
                 Place Bid <img src="./img/hero-section/arrow-right.svg" alt="arrow-right"/></a>
                 </div>
                   </div>
