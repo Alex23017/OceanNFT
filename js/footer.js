@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   const swiper = new Swiper(".mySwiperFooter", {
-    slidesPerView: 0, // по умолчанию для десктопа
+    slidesPerView: 0, 
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",

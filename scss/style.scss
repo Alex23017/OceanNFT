@@ -510,11 +510,13 @@ body {
   clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%, 0 13%);
   border-radius: 5px;
   max-width: 401px;
+  @media (max-width: 1080px) {
+    padding-inline-start: 20px;
+    padding-inline-end: 30px;
+  }
   @media (max-width: 768px) {
     margin-block-start: 0px;
     @media (max-width: 400px) {
-      padding-inline-start: 20px;
-      padding-inline-end: 30px;
       clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%, 0 20%);
     }
   }
@@ -616,6 +618,9 @@ body {
 .crypto-logo__body img {
   width: 100%;
   height: 100%;
+  @media (max-width: 1440px) {
+    max-width: 350px;
+  }
 }
 
 .crypto-logo {
@@ -638,11 +643,11 @@ body {
   // place-items: center;
   @media (max-width: 1440px) {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat((2, 1fr));
   }
   @media (max-width: 1250px) {
-    grid-template-columns: repeat((2, 1fr));
     flex-direction: column-reverse;
+    place-items: center;
     gap: 55px;
   }
   @media (max-width: 400px) {
@@ -662,6 +667,7 @@ body {
     flex-direction: column;
     column-gap: 35px;
     row-gap: 30px;
+    place-items: inherit;
     .crypto-logo__body-img--binance {
       max-width: 143px;
       min-height: 28px;
@@ -1023,6 +1029,7 @@ body {
   }
   @media (max-width: 400px) {
     margin-block-start: 20px;
+    margin-inline-start: 1px;
     gap: 17.86px;
   }
 }
@@ -1037,7 +1044,7 @@ body {
   &:hover {
     opacity: 1;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 992.99px) {
     padding: 10px;
   }
 }
@@ -1049,7 +1056,7 @@ body {
   margin-block-start: 15px;
   letter-spacing: 0.3px;
   @media (max-width: 400px) {
-    letter-spacing: 0px;
+    letter-spacing: 0.5px;
   }
 }
 .explore-collections__title-header {
@@ -1064,8 +1071,11 @@ body {
 }
 
 .explore-collections__cards-link {
-  @media (max-width: 768px) {
-    font-size: 11px;
+  @media (max-width: 992.99px) {
+    font-size: 14px;
+    @media (max-width: 400px) {
+      font-size: 10.11px;
+    }
   }
 }
 .explore-collections__title-header {
@@ -1109,7 +1119,7 @@ body {
     max-width: 185px;
   }
   @media (max-width: 400px) {
-    margin-block-start: 0px;
+    margin-block-start: -3px;
     margin-inline-start: 5px;
   }
 }
@@ -1337,12 +1347,15 @@ body {
 
   max-width: 100%;
   height: auto;
-
-  @media (max-width: 992.99px) {
+  @media (max-width: 1599px) {
+    top: 28%;
   }
-  @media (max-width: 600px) {
+  @media (max-width: 992.99px) {
+    top: 35%;
     width: 112px;
     height: 112px;
+  }
+  @media (max-width: 600px) {
     top: 40%;
   }
   @media (max-width: 440px) {
@@ -1840,10 +1853,7 @@ body {
     padding-inline: 25px;
   }
 
-  @media (max-width: 736px) {
-    margin-block-start: 200px;
-  }
-  @media (max-width: 600px) {
+  @media (max-width: 7068px) {
     margin-block-start: 300px;
   }
   @media (max-width: 400px) {
@@ -1996,6 +2006,9 @@ body {
   @media (max-width: 1380px) {
     flex-direction: column;
     align-items: center;
+    gap: 120px;
+  }
+  @media (max-width: 400px) {
     gap: 50px;
   }
 }
@@ -2143,7 +2156,8 @@ body {
   @media (max-width: 1280px) {
     width: 100%;
     padding: 0px;
-    grid-template-columns: repeat(auto-fill, minmax(175px, auto));
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
   }
 }
 
@@ -2210,10 +2224,6 @@ body {
   opacity: 1;
   font-size: 22px;
   font-family: map-get($fonts, footer-new);
-}
-
-.footer-wrapper .swiper-slide {
-  width: 100% !important;
 }
 
 // footer-rights
@@ -2289,6 +2299,9 @@ body {
   @media (max-width: 768px) {
     display: none;
   }
+}
+.footer__title img {
+margin-inline-end: 23px;
 }
 .footer__title--decoration.active {
   filter: drop-shadow(5px 5px 5px rgba(255, 0, 255, 1));
@@ -2417,4 +2430,7 @@ body {
     margin-inline-start: -25px;
     height: 80px;
   }
+}
+.swiper-slide--footer {
+  min-width: 100% !important;
 }
