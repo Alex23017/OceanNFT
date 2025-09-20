@@ -376,7 +376,7 @@ body {
     text-align: center;
   }
 }
-@media (max-width: 1200px) and (max-width: 400px) {
+@media (max-width: 1200px) and (max-width: 992.9px) {
   .hero-column__discover {
     padding-inline: 30px;
   }
