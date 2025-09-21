@@ -2,10 +2,10 @@
 
 .cards-body {
   font-family: map-get($fonts, secondary);
-  border: 2px solid transparent;
   color: #ffffff;
   backdrop-filter: blur(10px);
-
+  background: rgb(#ffffff, 0.1) border-box;
+  border: solid 3px rgba(244, 244, 244, 0.142);
 }
 
 .cards-body__column {

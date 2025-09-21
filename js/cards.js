@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const products = [
     {
       title: "Apollo Eth #1289 NFT",
-      imageCard: "img/nft-section/Appollo.jpg",
+      imageCard: "img/nft-section/Appollo.png",
       userName: "@jhonartist",
       hours: 18,
       minutes: 25,
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       title: "Sassy Bull #1169 Art",
-      imageCard: "img/nft-section/Sassy.jpg",
+      imageCard: "img/nft-section/Sassy.png",
       userName: "@jhonartist",
       hours: "09",
       minutes: 15,
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       title: "Satisfying 3D Art",
-      imageCard: "./img/nft-section/Satisfying.jpg",
+      imageCard: "./img/nft-section/Satisfying.png",
       userName: "@jhonartist",
       hours: 23,
       minutes: 32,
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       title: "Apollo Eth#1289 NFT",
-      imageCard: "./img/nft-section/Appollo.jpg",
+      imageCard: "./img/nft-section/Appollo.png",
       userName: "@jhonartist",
       hours: "09",
       minutes: 15,
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       title: "Sassy Bull #1169 Art",
-      imageCard: "./img/nft-section/Sassy.jpg",
+      imageCard: "./img/nft-section/Sassy.png",
       userName: "@jhonartist",
       hours: "09",
       minutes: 15,
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       title: "Satisfying Art 3D Art",
-      imageCard: "./img/nft-section/Satisfying.jpg",
+      imageCard: "./img/nft-section/Satisfying.png",
       userName: "@jhonartist",
       hours: "09",
       minutes: 15,
